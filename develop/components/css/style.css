@@ -1,0 +1,688 @@
+@charset "UTF-8";
+
+/*================================================
+ *  CSSリセット
+ ================================================*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    background: transparent;
+    font-weight: normal;
+}
+
+body {
+    line-height: 1
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: none
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    background: transparent
+}
+
+del {
+    text-decoration: line-through
+}
+
+abbr[title],
+dfn[title] {
+    border-bottom: 1px dotted;
+    cursor: help
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0
+}
+
+input,
+select {
+    vertical-align: middle
+}
+
+
+/*================================================
+ *  一般・共通設定
+ ================================================*/
+
+body {
+    font-size: 15px;
+    color: #333;
+    font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    line-height: 1.6;
+    background: #fff;
+}
+
+#mainimg img {
+    width: 100%;
+}
+
+.inner {
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+nav {
+    width: 100%;
+    background: #fff;
+}
+
+nav:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+section {
+    overflow: hidden;
+}
+
+section:last-child {
+    margin-bottom: 0;
+}
+
+a {
+    outline: none;
+    color: #333;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #c7b7d2;
+    text-decoration: none;
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+span {
+    font-weight: bold;
+    color: #996299;
+}
+
+img {
+    margin: 0;
+    padding: 0;
+    vertical-align: bottom;
+    height: auto;
+    max-width: 100%;
+}
+
+ul li img {
+    vertical-align: bottom;
+}
+
+ul li {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+
+/*================================================
+ *  ヘッダー
+ ================================================*/
+
+header {
+    box-sizing: border-box;
+    position: relative;
+    width: 100%;
+}
+
+.header_inner {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+
+.summary {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    margin-top: 10px;
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 0;
+}
+
+.logo {
+    float: left;
+    padding-top: 15px;
+}
+
+.tel {
+    float: right;
+}
+
+.tel_2 {
+    float: right;
+    padding-top: 25px;
+    width: 40%;
+}
+
+
+/*================================================
+ *  ｈ1
+ ================================================*/
+
+.h1_wrapper {
+    text-align: center;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #CCC;
+}
+
+h1 {
+    font-size: 14px;
+    width: 1000px;
+    margin: 0 auto;
+}
+
+
+/*================================================
+ *  キャンペーンバナー
+ ================================================*/
+
+.campaign-banar {
+    margin: 50px 0;
+    width: 100%;
+    height: auto;
+}
+
+.campaign-banar:hover {
+    opacity: 0.7;
+}
+
+
+/*================================================
+ *  コンテンツ
+ ================================================*/
+
+#wrapper {
+    overflow: hidden;
+    line-height: 2;
+}
+
+#contents {
+    background: #FFF;
+    padding: 0px;
+    /*コンテンツ内の余白*/
+    overflow: hidden;
+}
+
+.contents_in {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+.top_in {
+    width: 1000px;
+    overflow: hidden;
+    margin: 0 auto;
+    padding-bottom: 3%;
+}
+
+.top_text {
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 50%;
+}
+
+.top_text img {
+    position: absolute;
+    margin-top: -35%;
+}
+
+
+/*================================================
+ *  見出し
+ ================================================*/
+
+{
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: #996299;
+    text-align: center;
+    font-size: 1.8em;
+    color: #996299;
+    margin-bottom: 20px;
+}
+
+.contents_in h2 {
+    border-bottom: solid 4px #e9dbe8;
+    position: relative;
+    font-size: 1.8em;
+    margin-bottom: 20px;
+}
+
+.contents_in h2:after {
+    position: absolute;
+    content: " ";
+    display: block;
+    border-bottom: solid 4px #996299;
+    bottom: -4px;
+    width: 20%;
+}
+
+.top_in h2 {
+    border-bottom-width: 2px;
+    border-bottom-style: dotted;
+    border-bottom-color: #c7b7d2;
+    text-align: center;
+    font-size: 1.8em;
+    color: #c7b7d2;
+    margin-bottom: 20px;
+}
+
+.contents_in h3 {
+    border-left-width: 15px;
+    border-left-style: solid;
+    border-left-color: #c7b7d2;
+    font-size: 1.5em;
+    margin-bottom: 20px;
+    padding-left: 8px;
+}
+
+.contents_in h4 {
+    border-bottom: 2px dotted #ccc;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+
+/*================================================
+ *  装飾
+ ================================================*/
+
+.center {
+    text-align: center;
+}
+
+.font_strong {
+    font-weight: bold;
+    color: crimson;
+}
+
+
+/*ボタン装飾*/
+
+.link {
+    width: 80%;
+    margin-top: 0;
+    margin-right: auto;
+    margin-bottom: 10px;
+    margin-left: auto;
+}
+
+.link a {
+    color: #FFF;
+}
+
+.link a:hover {
+    color: #ff0;
+}
+
+.link_btn {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    text-align: center;
+    padding: 8px 0 10px;
+    border-radius: 5px;
+    background-image: -moz-linear-gradient( top, #ffa035 0%, #ff8300);
+    background-image: -webkit-gradient( linear, left top, left bottom, from(#ffa035), to(#ff8300));
+}
+
+
+/*リスト装飾*/
+
+.list-style li {
+    list-style: disc;
+    list-style-position: inside;
+}
+
+
+/*================================================
+ *  margin
+ ================================================*/
+
+.margin {
+    margin-top: 40px;
+}
+
+.m-1 {
+    margin-top: 10px;
+}
+
+.m-2 {
+    margin-top: 20px;
+}
+
+.m-3 {
+    margin-top: 30px;
+}
+
+.m-4 {
+    margin-top: 40px;
+}
+
+.m-01 {
+    margin-bottom: 10px;
+}
+
+.m-02 {
+    margin-bottom: 20px;
+}
+
+.m-03 {
+    margin-bottom: 30px;
+}
+
+.m-04 {
+    margin-bottom: 40px;
+}
+
+
+/*================================================
+ *  padding
+ ================================================*/
+
+.p-1 {
+    padding-top: 10px;
+}
+
+.p-2 {
+    padding-top: 20px;
+}
+
+.p-3 {
+    padding-top: 30px;
+}
+
+.p-4 {
+    padding-top: 40px;
+}
+
+.p-01 {
+    padding-bottom: 10px;
+}
+
+.p-02 {
+    padding-bottom: 20px;
+}
+
+.p-03 {
+    padding-bottom: 30px;
+}
+
+.p-04 {
+    padding-bottom: 40px;
+}
+
+
+/*================================================
+ *  トピックパス（パンくずリスト）
+ ================================================*/
+
+#topicpath {
+    padding-bottom: 0;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+#topicpath ol li {
+    display: inline;
+    font-size: 0.8em;
+}
+
+#topicpath ol li a {
+    padding-right: 20px;
+    background-image: url(../img/common/img_arrow.gif);
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: 10px 10px;
+}
+
+
+/*================================================
+ *  フッターメニュー
+ ================================================*/
+
+#footermenu {
+    color: #FFF;
+    background-color: #666;
+    overflow: hidden;
+}
+
+#footermenu a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.footermenu_box {
+    width: 1080px;
+    margin-top: 20px;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-left: auto;
+    overflow: hidden;
+}
+
+.footermenu_in {
+    float: left;
+    width: 23.5%;
+    margin-right: 2%;
+}
+
+.footermenu_in:last-child {
+    margin-right: 0;
+}
+
+.footermenu_title {
+    font-weight: bold;
+    padding-bottom: 4px;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+    border-bottom-color: #FFF;
+    margin-bottom: 5px;
+    font-size: 16px;
+}
+
+
+/*================================================
+ *  フッター
+ ================================================*/
+
+footer {
+    clear: both;
+    background-color: #999;
+    text-align: center;
+    color: #FFF;
+}
+
+
+/*================================================
+ *  ページトップへの戻り
+ ================================================*/
+
+.totop {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+}
+
+.totop a {
+    display: block;
+    text-decoration: none;
+}
+
+.totop img {
+    background: #666;
+    border-radius: 100px;
+    -webkit-border-radius: 100px;
+    -moz-border-radius: 100px;
+    padding: 10px;
+}
+
+.totop img:hover {
+    background: #666;
+}
+
+
+/* ------------------------------------------
+  スマホ用ページトップへの戻り
+--------------------------------------------- */
+
+#pagetop {
+    max-width: 100%;
+    height: auto;
+    width: auto;
+    clear: left;
+    width: 100%;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: auto;
+    font-size: 12px;
+}
+
+#pagetop a {
+    background-color: #C3C3C3;
+    /*背景色*/
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    width: 100%;
+    /*ボックス幅*/
+    display: block;
+    float: right;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+/*マウスオン時*/
+
+#pagetop a:hover {
+    background-color: #C3C3C3;
+}
+

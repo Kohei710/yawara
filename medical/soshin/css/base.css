@@ -1,0 +1,184 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code,
+del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var,
+b, i,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+	font-family: 'Noto Sans JP',"Yu Gothic Medium", "游ゴシック Medium","Yu Gothic", "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	font-weight: 400;
+    margin:0;
+    padding:0;
+    border:0;
+    outline:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+dl, dt, dd, ol, ul, li{ list-style: none;}
+body {
+    line-height:1;
+}
+
+article,aside,details,figcaption,figure,
+footer,header,hgroup,menu,nav,section {
+    display:block;
+}
+
+nav ul {
+    list-style:none;
+}
+
+blockquote, q {
+    quotes:none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content:'';
+    content:none;
+}
+
+a {
+    margin:0;
+    padding:0;
+    font-size:100%;
+    vertical-align:baseline;
+    background:transparent;
+}
+ins {
+    background-color:#ff9;
+    color:#000;
+    text-decoration:none;
+}
+
+mark {
+    background-color:#ff9;
+    color:#000;
+    font-style:italic;
+    font-weight:bold;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+abbr[title], dfn[title] {
+    border-bottom:1px dotted;
+    cursor:help;
+}
+
+table {
+    border-collapse:collapse;
+    border-spacing:0;
+}
+
+hr {
+    display:block;
+    height:1px;
+    border:0;
+    border-top:1px solid #cccccc;
+    margin:1em 0;
+    padding:0;
+}
+
+input, select {
+    vertical-align:middle;
+}
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	-o-box-sizing: border-box;
+}
+
+
+body{
+	font-size: 62.5%;
+	text-align: left;
+	color: #231815;
+	line-height: 1.6em;
+	margin: 0px;
+	padding: 0px;
+	height: auto;
+	width: auto;
+}
+
+img{
+	border:0;
+	vertical-align:top;
+}
+
+a{ 
+	color:#3B4043;
+    -webkit-transition: 0.3s;
+    -moz-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+a:link {
+	color:#3B4043 ;
+	text-decoration: none;
+}
+a:visited {
+	text-decoration: underline;
+	color: #3B4043;
+}
+a:hover {
+	text-decoration: none;
+	color: #3B4043;
+}
+a:active {
+	text-decoration: none;
+	color: #3B4043;
+}
+
+a::before,
+a::after {
+  position: absolute;
+  z-index: -1;
+  display: block;
+  content: '';
+}
+a,
+a::before,
+a::after {
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+a img:hover,a:hover{
+	opacity:0.6;
+	filter:alpha(opacity=60);	
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    transition: all  0.5s ease;
+}
+em,strong{ font-style: normal; font-weight: bold;}
+
+.clearfix:after{
+  content: "."; 
+  display: block; 
+  height: 0; 
+  font-size:0;	
+  clear: both; 
+  visibility:hidden;
+}
+	
+.clearfix{display: inline-block;} 
+
+/* Hides from IE Mac \*/
+* html .clearfix {height: 1%;}
+.clearfix{display:block;}
+/* End Hack */ 

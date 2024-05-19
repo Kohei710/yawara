@@ -1,0 +1,305 @@
+@charset "utf-8";
+/* CSS Document */
+
+.notosans{   font-family: 'Noto Sans JP', sans-serif !important; }
+body{
+	max-width: 100%;
+	overflow-x: hidden;
+	font-family:'Noto Sans JP', "游ゴシック", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
+	height: auto;
+	width: auto;
+	text-align: center;
+	font-size: 1em;
+	line-height: 1.8em;
+	color: #333;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 0;
+}
+img{ max-width: 100%; height: auto;}
+.SP{ display: none;}
+.wrap{
+	width: 90%;
+	max-width: 940px;
+	margin:0 auto;
+	text-align: left;
+}
+/*--header-------------------------------------------------------*/
+#header{
+	width: 100%;
+	text-align:center;
+	padding:30px 0;
+	position: relative;
+}
+
+#header #logo{
+	float:left;
+}
+#header .hbox{
+	float:right;
+	width: 335px;
+	text-align: center;
+	margin:0 auto;
+}
+#header .hbox p{
+	background-image: url(img/htel_l.png), url("img/htel_r.png");
+	background-repeat: no-repeat, no-repeat;
+	background-position: left center , right center;
+	letter-spacing: 3px;
+	font-weight: bold;
+	font-size:0.9em;
+	margin-bottom:10px;
+}
+#header .hbox div span:first-child{ padding-right:15px;}
+/*--header end-------------------------------------------------------*/
+
+/*--content-------------------------------------------------------*/
+#content{
+	width:100%;
+	height:auto;
+	margin: 0 auto;
+	padding:0;
+	clear: both;
+	text-align: left;
+}
+
+/*--main content end-------------------------------------------------------*/
+/*--footer-------------------------------------------------------*/
+
+#footer{
+	position: relative;
+	width: 100%;
+text-align: center;
+	background: #faf7fa;
+	padding:70px 0;
+	font-size: 1em;
+}
+#footer .flogo{ padding-bottom:20px;}
+address{ font-size:0.9em; font-style: normal;  padding:8px;}
+/*--footer end-------------------------------------------------------*/
+
+.red{
+	color:#af1508 !important;
+}
+.orange{
+	color:#FF6600 !important;
+}
+.green{
+	color:#43d937 !important;
+}
+.pink{
+	color:#FF557D !important;	
+}
+.blue{
+	color:#015daa !important;	
+}
+
+.Left{
+	float:left !important;
+}
+.Right{
+	float:right !important;
+}
+
+.clear{
+	clear:both;
+}
+.mp0{
+	margin:0 !important;
+	padding:0 !important;
+}
+.mR0{
+	margin-right:0 !important;
+}
+.mL0{
+	margin-left:0 !important;
+}
+.mL10{
+	margin-left:10px !important;
+}
+.mL15{
+	margin-left:15px !important;
+}
+.mB0{
+	margin-bottom:0 !important;
+}
+.mB2{
+	margin-bottom:2px !important;
+}
+.mB5{
+	margin-bottom:5px !important;
+}
+.mB10{
+	margin-bottom:10px !important;
+}
+.mB15{
+	margin-bottom:15px !important;
+}
+.mB20{
+	margin-bottom:20px !important;
+}
+.mB25{
+	margin-bottom:25px !important;
+}
+.mB30{
+	margin-bottom:30px !important;
+
+}
+.m0auto{
+	margin:0 auto;
+}
+.mT-5{
+	margin-top:-5px !important;
+}
+.mT-10{
+	margin-top:-10px !important;
+}
+.mT-15{
+	margin-top:-15px !important;
+}
+.mT5{
+	margin-top:5px !important;
+}
+.mT10{
+	margin-top:10px !important;
+}
+.mT15{
+	margin-top:15px !important;
+}
+.mT20{
+	margin-top:20px !important;
+}
+.mT30{
+	margin-top:30px !important;
+}
+.mR10{
+	margin-right:10px !important;
+}
+.mLR15{
+	margin-left:15px !important;
+	margin-right:15px !important;
+}
+.pB0{
+	padding-bottom:0 !important;
+}
+.pB10{
+	padding-bottom:10px !important;
+}
+.pB15{
+	padding-bottom:15px !important;
+}
+.pB20{
+	padding-bottom:20px !important;
+}
+.pB25{
+	padding-bottom:25px !important;
+}
+.pB30{
+	padding-bottom:30px !important;
+}
+.pB35{
+	padding-bottom:35px !important;
+}
+.pB40{
+	padding-bottom:40px !important;
+}
+.pT0{
+	padding-top:0 !important;
+}
+.pT5{
+	padding-top:5px !important;
+}
+.pT10{
+	padding-top:10px !important;
+}
+.pT15{
+	padding-top:15px !important;
+}
+.pT20{
+	padding-top:20px !important;
+
+}
+.pT30{
+	padding-top:30px !important;
+}
+.pT40{
+	padding-top:40px !important;
+}
+.pTB10{
+	padding-top:15px;
+	padding-bottom:15px;
+}
+.pTB20{
+	padding-top:20px;
+	padding-bottom:20px;
+
+}
+.pL5{
+	padding-left:5px !important;
+}
+.pL10{
+
+	padding-left:10px !important;
+}
+.pL15{
+
+	padding-left:15px !important;
+}
+.pL20{
+	padding-left:20px !important;
+}
+.pL30{
+	padding-left:30px !important;
+}
+.pR0{
+	padding-right:0 !important;
+}
+.pR10{
+	padding-right:10px !important;
+}
+.pR20{
+	padding-right:20px !important;
+}
+.pmB0{
+	margin-bottom:0 !important;
+	padding-bottom:0 !important;
+}
+.pL1em{
+	padding-left:1em !important;
+}
+.bordernone{
+	border:0 !important;
+}
+
+
+.mini{
+	font-size:0.9em;
+}
+.smoll{
+	font-size:0.8em;
+}
+
+.alignC{
+	text-align:center !important;
+}
+.alignL{
+	text-align:left !important;
+}
+.alignR{
+	text-align:right !important;
+}
+.big1{
+	font-size:1.3em !important;	
+}
+.big2{
+	font-size:1.4em !important;
+	line-height:1.4em;
+}
+.big3{
+	font-size:2em !important;
+	line-height:1.4em;
+}
+
+.bgnone{
+	background:none !important;	
+}

@@ -1,0 +1,542 @@
+@charset "UTF-8";
+
+/*================================================
+ *  メインコンテンツ
+ ================================================*/
+#contents_column {
+	overflow: hidden;
+}
+#main {
+	float: right;
+	width: 780px;	/*メインコンテンツ幅*/
+	margin-bottom: 40px;
+}
+
+/*================================================
+ *  サブコンテンツ 共通メニュー
+ ================================================*/
+#sub {
+	float: left;
+	width: 200px;	/*サブコンテンツ幅*/
+}
+aside {
+	margin-bottom: 20px;
+	}
+
+/*subコンテンツ内のh2タグ設定*/
+.sub_menu h2 {
+	font-size: 1.2em;
+	padding: 15px;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #ccc;
+	font-weight: bold;
+	color: #FFF;
+	background-color: #B4B4B4;
+	}
+
+/*subコンテンツ内のメニュー
+---------------------------------------------------------------------------*/
+/*メニュー１個ごとの設定*/
+.sub_menu ul li a {
+	display: block;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: #f7f6f4;
+}
+.sub_menu ul li a {
+	list-style-type:none;
+}
+.sub_menu ul li a:hover {
+	background-color: #efede9;
+}
+
+.sub_menu ul li {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #ccc;
+}
+.sub_menu ul li:last-child {
+	border-bottom: none;
+}
+
+
+/*subコンテンツ内のlistボックス
+---------------------------------------------------------------------------*/
+/*ボックス１個あたりの設定*/
+.sub_menu section.list {
+	background: #FFF;
+	overflow: hidden;	/*左側の線の幅、線種、色*/
+	position: relative;
+	margin-bottom: 0px;
+	border-right-width: 1px;
+	border-bottom-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-bottom-style: solid;
+	border-left-style: solid;
+	border-right-color: #CCC;
+	border-bottom-color: #CCC;
+	border-left-color: #CCC;
+}
+.sub_menu section.list a {
+	padding: 5px;	/*ボックス内の余白*/
+	text-decoration: none;
+	display: block;
+	overflow: hidden;
+}
+/*h4見出しタグ*/
+.sub_menu section.list h4 {
+	margin-left: 34%;	/*左の画像とバランスをとって設定する*/
+}
+/*p段落タグ*/
+.sub_menu section.list p {
+	margin-left: 34%;	/*左の画像とバランスをとって設定する*/
+	font-size: 11px;
+}
+/*サムネイル画像設定*/
+.sub_menu section.list figure img {
+	float: left;	/*左に回り込みさせる設定*/
+	width: 30%;	/*写真の幅*/
+	padding-top: 4px;
+}
+
+
+/*================================================
+ *  サブコンテンツ 専門メニュー
+ ================================================*/
+.submenu_list h2 {
+	background: #cfac59;
+	font-size: 1.2em;
+	padding: 15px;
+	font-weight: bold;
+	color: #FFF;
+	}
+.submenu_list li a {
+	display: block;
+	padding-left: 10px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.submenu_list li a {
+	list-style-type:none;
+	padding-left:25px;	
+}
+.submenu_list li a:hover {
+	background-color: #efede9;
+}
+
+.submenu_list li {
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #ccc;
+}
+
+/*================================================
+ *  サブコンテンツ コラムメニュー
+ ================================================*/
+.submenu_column h2 {
+	background-color: #ccc;
+	font-size: 1.2em;
+	padding: 15px;
+	}
+.submenu_column li a {
+	display: block;
+	border-bottom-width: 1px;
+	border-bottom-style: dotted;
+	border-bottom-color: #ccc;
+	padding-top: 15px;
+	padding-right: 5px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+}
+.submenu_column li a:hover {
+	background-color: #f3f0f5;
+	color: #996299;
+}
+
+
+/*コラム
+---------------------------------------------------------------------------*/
+.column {
+	line-height: 1.8;
+}
+.alignC{ text-align: center; padding:25px 0;}
+.text_red {
+	 color:red;
+	}
+.column_img {
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.column_day {
+	color: #999;
+	margin-bottom: 5px;
+}
+.column_pic {
+	float: left;
+	margin-right: 2%;
+}
+.column_pic2 {
+	text-align: center;
+}
+.column_pic2 img{
+	margin: 5px;
+}
+.column_picimg {
+	margin-bottom: 10px;
+	text-align: center;
+}
+.column_picimg img{
+	width: 40%;
+}
+
+#column_navi {
+	overflow: hidden;
+	margin-top: 20px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #CCC;
+	padding-top: 5px;
+}
+
+.column_navi_in {
+	overflow: hidden;
+	}
+.column_return {
+	float: left;
+}
+.column_next {
+	float: right;
+}
+.index_return {
+	text-align: center;
+	margin-top: 10px;
+}
+.column_box {
+	overflow: hidden;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CCC;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+	}
+.column_box:last-child {
+	border-bottom: none;
+	margin-bottom: 0;
+	}	
+.column_icon {
+	float: left;
+	margin-right: 20px;
+	}
+.column_icon img {
+	display: block;
+	border: 1px solid #ccc;
+}
+.column_view {
+	float: none;
+	}
+.column_up {
+	overflow: hidden;
+	float: none;
+	width: 100%;	
+	}
+
+/*コラム見出し
+---------------------------------------------------------------------------*/
+.column h2 {
+    background: transparent;
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    padding-bottom: 0.25em;
+    font-weight: bold;
+}
+.column h3 {
+    font-size: 1.4em;
+    font-weight: bold;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+}
+.column_contents h3 {
+	font-size: 1.5em;
+    font-weight: bold;
+    border-top-style: none;
+    border-right-style: none;
+    border-bottom-style: none;
+    border-left-style: none;
+    padding: 0;
+	margin-top: 0;
+	margin-bottom: 2%;
+}
+.column h4 {
+	font-size: 1.2em;
+	font-weight: bold;
+	margin-top: 20px;
+	margin-bottom: 10px;
+}
+
+.column h5 {
+	color: #CFAC59;	
+	font-size: 1.0em;
+    font-weight: bold;
+	margin-top: 10px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #CFAC59;
+	margin-bottom: 5px;
+}
+
+
+/*コラムリスト
+---------------------------------------------------------------------------*/
+.icn_link {
+	width: 14px;
+	margin-right: 1%;
+	vertical-align: middle;
+	}
+.column li {
+	list-style-position: inside;
+	list-style-type: disc;
+}
+
+/*コラムテーブル
+---------------------------------------------------------------------------*/
+.column table{
+    width: 75%;
+    border: 1px #ccc solid;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.column table th {
+    padding: 5px;
+    border: #ccc solid;
+    border-width: 0 0 1px 1px;
+    background: #F5F5F5;
+    font-weight: bold;
+    line-height: 120%;
+    text-align: center;
+}
+.column table td {
+    padding: 5px;
+    border: 1px #ccc solid;
+    border-width: 0 0 1px 1px;
+    text-align: center;
+    width: 20%;	
+}
+
+table.graph2  {
+    width: 100%;
+}
+table.graph2 th {
+    width: 20%;	
+}
+table.graph2 td {
+    text-align: left;
+    width: 80%;	
+}
+
+/*過去ログ
+---------------------------------------------------------------------------*/
+.log {
+	width: 780px;
+	display: table;
+	background-color:#f3f0f5;
+	margin-top: 10px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	padding-right: 5px;
+	padding-left: 5px;
+}
+.log_left { display: table-cell; text-align: left; }
+.log_middle  { display: table-cell; text-align: center; }
+.log_right     { display: table-cell; text-align: right; }
+.log_last {
+	color: #CCC;
+}
+
+/*装飾
+---------------------------------------------------------------------------*/
+.sample_01 {
+    width: 100%;
+    border-collapse: collapse;
+}
+.sample_01 th {
+    width: 25%;
+    padding: 6px;
+    text-align: left;
+    vertical-align: top;
+    color: #333;
+    background-color: #eee;
+    border: 1px solid #b9b9b9;
+}
+.sample_01 td {
+    padding: 6px;
+    background-color: #fff;
+    border: 1px solid #b9b9b9;
+}
+
+
+
+/*================================================
+ *  ここからSP用CSS
+ ================================================*/
+
+@media only screen and (max-width:800px){
+	
+/*main,subコンテンツ
+---------------------------------------------------------------------------*/
+#contents_column {
+	width: auto;
+	margin: 0;
+}
+	
+/*main,subコンテンツ
+---------------------------------------------------------------------------*/
+#main, #sub {
+	float: none;
+	width: auto;
+	margin-top: 10px;
+}	
+	
+.column_box {
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+
+/*コラム
+---------------------------------------------------------------------------*/
+.column_img {
+	float: none;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-align: center;
+}
+
+/*コラムテーブル
+---------------------------------------------------------------------------*/
+.column table{
+    width: 100%;
+}
+
+
+/*過去ログ
+---------------------------------------------------------------------------*/
+.log {
+	width: 100%;
+}
+
+}
+
+
+
+/*ここからタブレット用（481px～800px）環境の設定
+---------------------------------------------------------------------------*/
+/*表示を切り替えるウィンドウサイズの指定*/
+@media (min-width:481px) and (max-width:800px){
+	
+	
+/*メインコンテンツ
+---------------------------------------------------------------------------*/
+#contents {
+	width: auto;
+	margin: 0;
+}
+	
+/*コンテンツ
+---------------------------------------------------------------------------*/
+.contents {
+	width: auto;
+}
+.contents_in {
+	padding-right: 20px;
+	padding-left: 20px;
+}
+	
+	
+	
+/*コラム
+---------------------------------------------------------------------------*/
+.column_img {
+	margin-right: 0;
+	width: 100%;
+}
+.column_contents {
+	float: none;
+	}
+.column_icon img {
+	width: 100%
+	}
+.column_icon {
+	margin-right: 10px;
+	}
+.column_view {
+	float: right;
+	margin-top: -20px;	
+	}
+	
+}
+
+
+/*ここからスマートフォン用（480px以下）環境の設定
+---------------------------------------------------------------------------*/
+/*表示を切り替えるウィンドウサイズの指定*/
+@media (max-width : 480px){
+	
+/*コンテンツ
+---------------------------------------------------------------------------*/
+.contents {
+	width: auto;
+}
+.contents_in {
+	padding-right: 10px;
+	padding-left: 10px;
+}
+	
+/*コラム
+---------------------------------------------------------------------------*/
+.column_img {
+	margin-right: 0;
+	width: 100%;
+}
+.column_picimg img{
+	width: 80%;
+	}	
+.column_contents {
+	float: none;
+	}
+.column_icon img {
+	width: 70px;	
+	}
+.column_icon {
+	margin-right: 10px;
+	}	
+.column_view {
+	float: right;
+	}
+	
+/*コラム見出し
+---------------------------------------------------------------------------*/
+.column_contents h3 {
+	font-size: 1.2em;
+	margin-bottom: 0;
+	line-height: 1.4;
+	}
+
+/*コラムテーブル
+---------------------------------------------------------------------------*/
+table.graph2 th {
+    width: 35%;	
+}
+
+}
+
+
+
+

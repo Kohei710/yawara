@@ -1,0 +1,166 @@
+#header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #fff;
+    height: 168px;
+}
+@media screen and (max-width:800px) {
+    #header{
+        height: 75px;
+    }
+}
+
+.header_inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.menu_sp {
+    display: none;
+    position: relative;
+}
+
+/* スマホ用　電話ボタン */
+
+/* 電話アイコン */
+.sp-tel{
+    display: block;
+    width: 45px;
+    height: 45px;
+    position: static;
+}
+.sp-tel img {
+    width: 27px;
+    background: #9a699c;
+    padding: 8px;
+    border-radius: 7px;
+}
+
+
+/* メニューのオンオフ　※常に表示オフ */
+.menu-checkbox {
+    display: none;
+}
+
+/*　SPメニュー一覧 */
+.drawer-nav {
+    position: fixed;
+    width: 220px;
+    transform: translateX(150%);
+    top: 63.5px;
+    height: calc(100vh - 63.5px);
+    transition: all .5s;
+    z-index: 2;
+}
+
+.menu-checkbox:checked~.drawer-nav {
+    transform: translateX(5%);
+}
+
+/*　SPメニュー裏の黒い背景 */
+.drawer-blackscreen {
+    display: none;
+    background-color: rgb(13 13 13 / 34%);
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 63.5px;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-checkbox:checked~.drawer-blackscreen {
+    display: block;
+}
+
+/* ハンバーガーメニュー */
+label.label-drawer-hamburger {
+    display: block;
+    width: 43px;
+    height: 43px;
+    background-color: #d9cdbf;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    position: relative;
+}
+
+.hamburger-line {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 6.5px;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.hamburger-line:nth-child(1) {
+    top: 11.5px;
+}
+
+.hamburger-line:nth-child(2) {
+    top: 20.5px;
+    transform: scale(1);
+}
+
+.hamburger-line:nth-child(3) {
+    top: 29.5px;
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+    width: 36px;
+    left: 2.5px;
+    transform-origin: center;
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(2) {
+    transform: scale(0);
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+    width: 36px;
+    left: 2.5px;
+    transform-origin: center;
+}
+
+
+@media (max-width: 800px) {
+    .header{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .header_inner{
+        margin: 0;
+    }
+    
+    #menu_sp{
+        display: flex;
+        padding-top: 15px;
+        width: 100px;
+        height: auto;
+        justify-content: flex-end;
+        flex-wrap: nowrap;
+        gap: 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .logo{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+        #footer{
+        min-height: 413.234px;
+    }
+}

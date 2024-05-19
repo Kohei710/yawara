@@ -1,0 +1,235 @@
+:root{
+    --sub-color: #9d9477
+}
+
+#menu_sp {
+    display: none;
+}
+
+/* メニューのオンオフ　※常に表示オフ */
+.menu-checkbox {
+    display: none;
+}
+
+/* ヘッダーバー全体　*/
+@media screen and (max-width:800px) {
+    header {
+        z-index: 10000;
+        position: fixed;
+        top: 0;
+        left: 0;
+        padding: 10px 10px 10px 25px;
+        margin: 0 auto;
+        background-color: #FFF;
+        box-shadow: 4px 4px 6px 0px rgba(0, 0, 0, 0.4);
+    }
+
+    .header_inner {
+        align-items: center;
+        overflow: visible;
+    }
+
+    .logo {
+        padding: 0;
+    }
+}
+
+.nav__iconWrapper {
+    display: flex;
+    gap: 15px;
+    margin-right: 20px;
+}
+
+
+/*　SPメニュー一覧 */
+.drawer-nav {
+    position: absolute;
+    left: calc(100% + 30px);
+    top: 45px;
+    height: calc(100vh - 45.5px);
+    transition: all .5s;
+    z-index: 2;
+}
+
+.menu-checkbox:checked~.drawer-nav {
+    left: 50%;
+}
+
+/*　SPメニュー裏の黒い背景 */
+.drawer-blackscreen {
+    display: none;
+    background-color: rgb(13 13 13 / 34%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 50px;
+    left: -25px;
+    z-index: 1;
+}
+
+.menu-checkbox:checked~.drawer-blackscreen {
+    display: block;
+}
+
+/* ハンバーガーメニュー */
+.hamburgerBox {
+    flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+label.label-drawer-hamburger {
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+}
+
+.hamburger-line {
+    height: 2px;
+    left: 5px;
+    right: 5px;
+    background-color: var(--sub-color);
+    transition: all .5s;
+    position: absolute;
+}
+
+.hamburger-line:nth-child(1) {
+    top: 8px;
+}
+
+.hamburger-line:nth-child(2) {
+    top: 19px;
+    transform: scale(1);
+}
+
+.hamburger-line:nth-child(3) {
+    bottom: 8px;
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(1) {
+    transform: translateY(11px) rotate(45deg) scale(1.2);
+    transform-origin: center center;
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(2) {
+    transform: scale(0);
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(3) {
+    transform: translateY(-11px) rotate(-45deg) scale(1.2);
+    transform-origin: center center;
+}
+
+.hamburgerBox__text {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0 auto;
+}
+
+/* 電話アイコン */
+.navTel__box {
+    display: none;
+}
+
+.navTel__box {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    flex-shrink: 0;
+
+    .navTel__iconWrapper {
+        display: block;
+
+        & img {
+            width: 40px;
+            background-color: #fff;
+        }
+        .navTel__svg{
+            width: 33px;
+            aspect-ratio: 1;
+            fill: var(--sub-color);
+            vertical-align: middle;
+            padding-bottom: 1px;
+        }
+    }
+
+    .navTel__text {
+        font-family: 'Noto Sans JP', sans-serif;
+        font-size: 14px;
+        use{
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width: 800px) {
+    #menu_sp {
+        display: block;
+    }
+
+    .navTel__box {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #header {
+        min-height: 158px;
+    }
+
+    #time {
+    }
+
+    #self {
+        min-height: 530px;
+    }
+
+    #footer {
+        min-height: 813px;
+    }
+}
+
+@media screen and (min-width: 1021px) {
+    #footer {
+        min-height: 413.234px;
+    }
+}
+
+/* スクロールによるヘッダー表示切り替え（menuMove.jsで操作） */
+#js-header.UpMove {
+    animation: UpAnime 0.5s forwards;
+}
+
+@keyframes UpAnime {
+    from {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+    to {
+        /* opacity: 0; */
+        transform: translateY(-100px);
+    }
+}
+
+/*　下に下がる動き　*/
+
+#js-header.DownMove {
+    animation: DownAnime 0.5s forwards;
+}
+
+@keyframes DownAnime {
+    from {
+        /* opacity: 0; */
+        transform: translateY(-100px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

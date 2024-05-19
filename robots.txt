@@ -1,0 +1,5 @@
+User-Agent: Googlebot
+Disallow: /develop/
+
+User-Agent: bingbot
+Disallow: /develop/

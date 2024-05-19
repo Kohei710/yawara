@@ -1,0 +1,170 @@
+#wrapper,
+.wrapper {
+    margin: 0;
+}
+
+.mainImg__wrapper {
+    position: relative;
+    object-fit: cover;
+    height: 100vh;
+    max-height: 600px;
+    font-family: 'Shippori Mincho', serif;
+    z-index: -1;
+    transition: all 1s ease;
+
+    @media screen and (min-width:800px) {
+        height: calc(100vh - 158px);
+    }
+
+    /* スライドショー初期画像 */
+    .mainImg__img01 {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/img/index/heroImg-02@2000w.webp) no-repeat center center / cover;
+        opacity: 1;
+        transition: all 1s;
+        @media screen and (max-width:1200px) {
+            background-image: url(/img/index/heroImg-02@1200w.webp);
+        }
+    }
+
+    .mainImg__img02 {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/img/index/heroImg-01@2000w.webp) no-repeat center center / cover;
+        opacity: 0;
+        transition: all 1s;
+        @media screen and (max-width:1200px) {
+            background-image: url(/img/index/heroImg-01@1200w.webp);
+        }
+    }
+
+    .mainImg__img03 {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/img/index/heroImg-03@2000w.webp) no-repeat center center / cover;
+        opacity: 0;
+        transition: all 1s;
+        @media screen and (max-width:1200px) {
+            background-image: url(/img/index/heroImg-03@1200w.webp);
+        }
+    }
+    .mainImg__img04 {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/img/index/heroImg-04@2000w.webp) no-repeat center center / cover;
+        opacity: 0;
+        transition: all 1s;
+        @media screen and (max-width:1200px) {
+            background-image: url(/img/index/heroImg-04@1200w.webp);
+        }
+    }
+    .mainImg__img06 {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: url(/img/index/heroImg-06@2000w.webp) no-repeat center center / cover;
+        opacity: 0;
+        transition: all 1s;
+        @media screen and (max-width:1200px) {
+            background-image: url(/img/index/heroImg-06@1200w.webp);
+        }
+    }
+
+    .mainImg__message {
+        position: absolute;
+        bottom: 10%;
+        color: #4d3400;
+        background: rgba(255, 224, 224, .7);
+        right: 0;
+        padding: 5px 10px 15px 50px;
+
+        @media screen and (min-width:800px) {
+            padding: 5px 120px 5px 50px;
+        }
+
+        @media screen and (max-width:400px) {
+            padding-left: 20px;
+        }
+
+        .mainImg__bigger {
+            font-size: clamp(24px, 4vw, 40px);
+
+            & span {
+                font-size: clamp(38px, 4.8vw, 60px);
+                color: #4d3400;
+            }
+        }
+
+        .mainImg__middle {
+            margin-top: 10px;
+            font-size: clamp(22px, 2.75vw, 32px);
+            display: inline-block;
+        }
+    }
+}
+
+.section__notice {
+    display: block;
+    padding: 5px 0;
+    bottom: 50px;
+    right: 0;
+    margin: 0 auto;
+
+    .notice__title {
+        line-height: 1;
+        font-size: 24px;
+    }
+
+    .notice__content {
+        text-align: left;
+        width: 100%;
+        background-color: #fff;
+        font-size: 16px;
+
+        &:not(:first-of-type) {
+            margin-top: 20px;
+        }
+
+        .notice__articleTitle {
+            font-weight: bold;
+            padding: 5px 15px;
+            margin-bottom: 10px;
+            font-size: 1.2em;
+        }
+
+        .notice__message {
+            margin-left: 15px;
+            line-height: 1.7;
+            font-weight: normal;
+        }
+    }
+}
+
+
+#contents.contents__calender {
+    position: relative;
+    overflow: visible;
+    /* margin-top: -200px; */
+    z-index: 100;
+    background-color: #ffffffe1;
+}

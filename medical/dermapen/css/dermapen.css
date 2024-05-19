@@ -1,0 +1,1168 @@
+@charset "UTF-8";
+
+/*共通
+---------------------------------------------------------------------------*/
+
+.f-bold {
+    font-weight: 600;
+}
+
+.t-center {
+    text-align: center;
+}
+
+.t-left {
+    text-align: left;
+}
+
+.t-right {
+    text-align: right;
+}
+
+.mb_20 {
+    margin-bottom: 20px;
+}
+
+.mb_30 {
+    margin-bottom: 30px;
+}
+
+.mb_40 {
+    margin-bottom: 40px;
+}
+
+.mb_50 {
+    margin-bottom: 50px;
+}
+
+.mt_30 {
+    margin-top: 30px;
+}
+
+.mt_40 {
+    margin-top: 40px;
+}
+
+.mt_50 {
+    margin-top: 50px;
+}
+
+.mr_30 {
+    margin-right: 30px;
+}
+
+.mr_50 {
+    margin-right: 50px;
+}
+
+.pt_50 {
+    padding-top: 50px;
+}
+
+.text-block {
+    margin: 0 30px 30px;
+}
+
+.f-small {
+    font-size: 0.9rem;
+    padding-top: 20px;
+}
+
+.f-13 {
+    font-size: 1.3rem;
+}
+
+.f-14 {
+    font-size: 1.4rem;
+}
+
+.f-15 {
+    font-size: 1.5rem;
+}
+
+.f-16 {
+    font-size: 1.6rem;
+}
+
+.f-17 {
+    font-size: 1.7rem;
+}
+
+.f-2 {
+    font-size: 2rem;
+}
+
+@media (max-width: 760px) {
+    .text-block {
+        margin: 0 20px 20px;
+    }
+    .f-14 {
+        font-size: 0.95rem;
+    }
+    .f-15 {
+        font-size: 1rem;
+    }
+}
+
+
+/*外枠
+        ---------------------------------------------------------------------------*/
+
+.dermapen-wrap {
+    width: 770px;
+    margin: 20px auto 0;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+@media (max-width: 760px) {
+    .dermapen-wrap {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+}
+
+
+/*そんなあなたにオススメ
+        ---------------------------------------------------------------------------*/
+
+.osusume {
+    background: #f6f6ea;
+}
+
+.osusume-title {
+    text-align: center;
+    padding: 30px 10px 0;
+    background: #FF6969;
+    color: #fff;
+    font-size: 2.1rem;
+}
+
+.osusume-title-bottom {
+    background: #f6f6ea;
+    margin-bottom: 50px;
+}
+
+.osusume-title span {
+    padding: 5px 15px 0;
+    background: #fff;
+    color: #333;
+    border: solid 1px #333;
+    font-weight: normal;
+    margin-right: 5px;
+}
+
+.osusume_wrap {
+    position: relative;
+    padding-top: 50px;
+    margin-bottom: 50px;
+}
+
+.osusume_wrap_leftNO {
+    position: absolute;
+    top: 0;
+    right: 25px;
+}
+
+.osusume_wrap_rightNO {
+    position: absolute;
+    top: 0;
+    left: 25px;
+}
+
+.osusume_wrap_left {
+    background: #FDC1AE;
+    padding: 50px;
+    margin-right: 30px;
+    border-radius: 0 17px 17px 0;
+}
+
+.osusume_wrap_right {
+    background: #FDC1AE;
+    padding: 50px;
+    margin-left: 30px;
+    border-radius: 17px 0 0 17px;
+}
+
+.osusume_wrap_left h4 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 3px;
+}
+
+.osusume_wrap_right h4 {
+    margin: 0 0 30px 0;
+    font-weight: bold;
+    font-size: 2rem;
+    letter-spacing: 3px;
+    text-align: right;
+}
+
+.osusume_img {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+@media screen and (max-width:750px) {
+    .osusume-title {
+        padding: 10px 10px 0;
+        font-size: 1.1rem;
+    }
+    .osusume-title-bottom {
+        margin-bottom: 30px;
+    }
+    .osusume-title span {
+        padding: 2px 10px 2px;
+        background: #fff;
+    }
+    .osusume_wrap_leftNO {
+        right: 20px;
+        top: 25px;
+    }
+    .osusume_wrap_rightNO {
+        left: 20px;
+        top: 25px;
+    }
+    .osusume_wrap_leftNO img {
+        width: 45%;
+        float: right;
+    }
+    .osusume_wrap_rightNO img {
+        width: 45%;
+        float: left;
+    }
+    .osusume_wrap_left {
+        padding: 20px;
+        margin-right: 15px;
+    }
+    .osusume_wrap_right {
+        padding: 20px;
+        margin-left: 15px;
+    }
+    .osusume_wrap_left h4 {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+    .osusume_wrap_right h4 {
+        margin-bottom: 20px;
+        font-size: 1.1rem;
+    }
+    .osusume_img img {
+        width: 180px;
+    }
+}
+
+
+/*そんなダーマペン4とは
+    ---------------------------------------------------------------------------*/
+
+.about_d {
+    background: #eaeaea;
+    padding: 30px 0 50px;
+}
+
+.nounder-line {
+    color: #333;
+    display: block;
+    font-size: 1.4rem;
+    font-weight: normal;
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.under-line {
+    color: #333;
+    font-size: 2rem;
+    font-weight: normal;
+    background: linear-gradient(transparent 60%, #ffc7cf 40%);
+    letter-spacing: 2px;
+    font-weight: 600;
+}
+
+.illustimg {
+    text-align: right;
+    margin: 0 50px 50px 0;
+}
+
+.advice {
+    text-align: center;
+}
+
+@media screen and (max-width:750px) {
+    .nounder-line {
+        font-size: 1rem;
+    }
+    .under-line {
+        font-size: 1.2rem;
+    }
+    .illustimg {
+        text-align: right;
+        margin: 0 20px 30px 0;
+    }
+    .advice {
+        width: 94%;
+        margin: 0 3%;
+    }
+}
+
+
+/*治療方のご案内
+    ---------------------------------------------------------------------------*/
+
+.flow {
+    background: #FDC1AE;
+    padding: 0 0 50px;
+}
+
+.flowlead {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+}
+
+.lead_gold {
+    font-size: 1.7rem;
+    margin-bottom: 40px;
+    color: #9c9376;
+    text-align: center;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.hactive-img {
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.flow .lead1 {
+    background: url(../img/border.png) center no-repeat;
+    text-align: center;
+    margin-bottom: 0px;
+    letter-spacing: 2px;
+}
+
+.flow h4 {
+    background: url("../img/h4howto.png") center bottom no-repeat;
+    padding-bottom: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+.flow_bg {
+    margin: 0 50px;
+    background: url("../img/flow_obi.png") center repeat-y;
+}
+
+.flow_bg dl {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border: solid 1px #333;
+    margin-bottom: 30px;
+}
+
+.flow_bg dt {
+    padding: 30px 10px 30px 15px;
+    width: 30%;
+    text-align: center;
+    line-height: 40px;
+    font-size: 1.15rem;
+}
+
+.flow_bg dt span {
+    display: block;
+    color: #C75555;
+    font-weight: bold;
+    font-size: 2.6rem;
+    letter-spacing: 1px;
+    margin-bottom: 0;
+}
+
+.flow_bg dd {
+    padding: 30px 15px 30px 10px;
+    width: 70%;
+    font-size: 1.15rem;
+    vertical-align: middle
+}
+
+.tiryoueki {
+    position: relative;
+    padding-top: 110px;
+}
+
+.tiryoueki-in {
+    background: #fff;
+    border-radius: 17px;
+    padding: 20px;
+    border: solid 3px #9c9376;
+    margin: 0 30px 30px;
+}
+
+.tiryoueki-in h5.leftside {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tiryoueki-in h5.rightside {
+    font-size: 2.5rem;
+    margin: 0 0 20px 230px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.tiryoueki-right-no {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.tiryoueki-left-no {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.tiryoueki-in .lead {
+    background: url("../img/border.png") center repeat-x;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.tiryoueki-in .lead span {
+    background: #fff;
+    padding: 0 20px;
+    color: #9c9376;
+    font-size: 0.95em;
+}
+
+.kouka {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.kouka li {
+    width: 30%;
+    margin: 0 1.5%;
+    border-radius: 10px;
+    padding: 10px 0;
+    text-align: center;
+    background: #9c9376;
+    color: #fff;
+    font-size: 1.2rem;
+}
+
+.seibun {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seibun li {
+    width: 50%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background: url("../img/list-img.png") no-repeat left 35%;
+}
+
+.seibun2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.seibun2 li {
+    width: 33%;
+    padding-left: 30px;
+    box-sizing: border-box;
+    background: url("../img/list-img.png") no-repeat left 35%;
+}
+
+.flow_caution {
+    margin: 0 30px;
+}
+
+.flow_caution li {
+    text-indent: -1.7em;
+    padding-left: 1.7em;
+    font-size: 1rem;
+}
+
+@media (max-width: 760px) {
+    .flowlead {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+    .lead_gold {
+        font-size: 1.1rem;
+        line-height: 25px;
+    }
+    .hactive-img img {
+        margin: 0 15% 10px;
+        width: 70%;
+    }
+    .flow h4 {
+        padding-bottom: 20px;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        background-size: 90px;
+        margin-bottom: 20px;
+    }
+    .flow_bg {
+        margin: 0 30px;
+    }
+    .flow_bg dl {
+        flex-wrap: wrap;
+    }
+    .flow_bg dt {
+        padding: 20px 20px 0;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+    .flow_bg dt span {
+        font-size: 1.4rem;
+    }
+    .flow_bg dd {
+        padding: 20px;
+        width: 100%;
+        font-size: 1rem;
+    }
+    .tiryoueki {
+        position: relative;
+        padding-top: 50px;
+    }
+    .tiryoueki-in {
+        padding: 20px;
+        margin: 0 20px 30px;
+    }
+    .tiryoueki-in h5.leftside {
+        font-size: 1.3rem;
+        margin-bottom: 20px;
+    }
+    .tiryoueki-in h5.rightside {
+        font-size: 1.3rem;
+        margin: 0 0 20px 70px;
+    }
+    .tiryoueki-right-no {
+        top: 10px;
+        left: 0;
+    }
+    .tiryoueki-left-no {
+        top: 10px;
+        right: 0;
+    }
+    .tiryoueki-right-no img {
+        width: 40%;
+        float: left;
+    }
+    .tiryoueki-left-no img {
+        width: 40%;
+        float: right;
+    }
+    .tiryoueki-in .lead span {
+        font-size: 1em;
+        padding: 0 5px;
+    }
+    .kouka li {
+        font-size: 1rem;
+    }
+    .flow_caution {
+        margin: 0 20px;
+    }
+    .flow_caution li {
+        font-size: 0.95rem;
+    }
+    .seibun li,
+    .seibun2 li {
+        width: 100%;
+        margin-bottom: 10px;
+        font-size: 0.98rem;
+    }
+}
+
+
+/*支払い方法
+    ---------------------------------------------------------------------------*/
+
+.pay {
+    background: #f6f6ea;
+    padding: 50px 30px;
+}
+
+.pay h3 span {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-bottom: 0px;
+    display: block;
+    color: #333;
+}
+
+.pay h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.4em;
+    margin-bottom: 50px;
+    color: #9c9376;
+    font-style: italic;
+}
+
+.pay h4 {
+    background: url("../img/h4pay.png") center bottom no-repeat;
+    padding-bottom: 35px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.7rem;
+    margin-bottom: 50px;
+}
+
+.round-corner-table {
+    border-collapse: separate;
+    border: solid 4px #9c9376;
+    border-radius: 17px;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.round-corner-table th {
+    background: #9c9376;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 1.8em;
+    font-weight: bold;
+}
+
+.round-corner-table td {
+    background: #fff;
+    padding: 10px;
+    font-size: 1.8em;
+    font-weight: bold;
+    border-top: solid 3px #9c9376;
+    box-sizing: border-box;
+}
+
+.round-corner-table td.count {
+    width: 70%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.round-corner-table td.price {
+    width: 35%;
+    text-align: right;
+    white-space: nowrap;
+    box-sizing: border-box;
+}
+
+.round-corner-table tr:first-child td:first-child {
+    /* 最初のtr(行) かつ、最初の td(列) つまり、1行目1列目に適用*/
+    border-radius: 20px 0 0 0;
+    /* 左上から指定してゆく */
+}
+
+.round-corner-table tr:first-child td:last-child {
+    /* 最初のtr(行) かつ、最後の td(列) つまり、1行目3列目に適用*/
+    border-radius: 0 20px 0 0;
+}
+
+.round-corner-table tr:last-child td:first-child {
+    /* 最後のtr(行) かつ、最初の td(列) つまり、3行目1列目に適用*/
+    border-radius: 0 0 0 20px;
+}
+
+.round-corner-table tr:last-child td:last-child {
+    /* 最後のtr(行) かつ、最後の td(列) つまり、3行目3列目に適用*/
+    border-radius: 0 0 20px 0;
+}
+
+.round-corner-table tr:last-child td.end {
+    border-radius: 0 0 20px 20px;
+    font-size: 1.25em;
+    font-weight: normal;
+    border-top: none;
+    padding-top: 0;
+}
+
+.pay ul {
+    margin-bottom: 30px;
+}
+
+.pay li {
+    list-style: none;
+    text-indent: -1.2em;
+    padding-left: 1.2em;
+    font-size: 1rem;
+}
+
+.siharaihouhou {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+@media (max-width: 760px) {
+    .kouka {
+        justify-content: space-between;
+    }
+    .kouka li {
+        width: 32%;
+        margin: 0;
+        font-size: 0.9rem;
+        padding: 5px 2px;
+        box-sizing: border-box;
+    }
+    .round-corner-table {
+        margin-bottom: 30px;
+    }
+    .round-corner-table th {
+        font-size: 1.3rem;
+    }
+    .round-corner-table td {
+        font-size: 1.1rem;
+    }
+    .pay h4 {
+        padding-bottom: 20px;
+        font-size: 1.5em;
+        letter-spacing: 2px;
+        background-size: 90px;
+        margin-bottom: 20px;
+    }
+    .pay li {
+        font-size: 0.95rem;
+    }
+    .siharaihouhou {
+        font-size: 1rem;
+    }
+}
+
+
+/*Q&A
+        ---------------------------------------------------------------------------*/
+
+.QandA {
+    background: url("../img/qanda_bg.png") center top repeat-y;
+    padding: 50px 35px;
+}
+
+.QandA h3 {
+    margin-bottom: 50px;
+}
+
+.QandA dl {
+    margin-bottom: 40px;
+}
+
+.QandA dt {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding-left: 100px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    background: url("../img/q.png") left top no-repeat;
+}
+
+.QandA dd {
+    padding-left: 100px;
+    background: url("../img/a.png") left no-repeat;
+    font-size: 1rem;
+}
+
+@media (max-width: 760px) {
+    .QandA {
+        padding: 50px 20px;
+    }
+    .QandA dt {
+        margin-bottom: 20px;
+    }
+    .QandA dd {
+        background: url("../img/a.png") left top no-repeat;
+    }
+}
+
+
+/*院長のご挨拶
+        ---------------------------------------------------------------------------*/
+
+.syoukai {
+    margin-top: 70px;
+    border: solid 3px #333;
+    background: #FFF;
+    border-radius: 17px;
+    padding: 30px;
+    position: relative;
+}
+
+.syoukai .lead {
+    background: url("../img/border2.png") center no-repeat;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.syoukai .lead span {
+    background: #FFF;
+    padding: 0 5px;
+    color: #333;
+    font-size: 1.25em;
+    letter-spacing: 1px;
+}
+
+.syoukai h3 {
+    text-align: center;
+    font-size: 1.7em;
+    letter-spacing: 1px;
+    font-weight: bold;
+    padding-bottom: 5px;
+    background: url("../img/pink_lin.png") center bottom no-repeat;
+    margin-bottom: 90px;
+}
+
+.syoukai li {
+    font-size: 1rem;
+}
+
+.annai_img {
+    position: absolute;
+    top: 130px;
+    left: 30px;
+}
+
+.annai_img img {
+    margin-bottom: 10px;
+}
+
+.annai_img p {
+    line-height: 25px;
+}
+
+.annai_img span {
+    color: #333;
+    font-size: 1.2em;
+}
+
+.annai {
+    background: #ffcccc;
+    padding: 30px 30px 30px 65px;
+    border-radius: 15px;
+    margin-left: 230px;
+    font-size: 1rem;
+}
+
+.pc_name {
+    display: block;
+    font-size: 0.95rem;
+}
+
+.pc_name span {
+    font-weight: 600;
+    font-size: 1.1rem;
+}
+
+.sp_name {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .syoukai {
+        padding: 15px 15px 0;
+    }
+    .annai_img {
+        position: absolute;
+        top: 90px;
+        left: 15px;
+    }
+    .annai_img img {
+        width: 90%;
+    }
+    .annai {
+        padding: 130px 20px 20px;
+        margin: 250px 0 30px 10%;
+        font-size: 0.95rem;
+    }
+    .syoukai li {
+        font-size: 0.95rem;
+        margin-bottom: 15px;
+    }
+    .pc_name {
+        display: none;
+    }
+    .sp_name {
+        display: block;
+        text-align: right;
+        margin-top: 30px;
+        font-size: 0.85rem;
+    }
+    .sp_name span {
+        font-weight: 600;
+        font-size: 1.1rem;
+    }
+}
+
+
+/*お電話でお問合せBOX
+---------------------------------------------------------------------------*/
+
+.odenwa-wrap {
+    padding: 0 39px;
+}
+
+.odenwa {
+    background: #fff;
+    padding-bottom: 50px;
+    border-radius: 0 0 17px 17px;
+    border: solid 4px #FF6969;
+    margin-bottom: 30px;
+    padding: 35px 0;
+    border-top: none;
+}
+
+.odenwa_caution {
+    margin: 0 0 30px 15px;
+    font-size: 1rem;
+}
+
+.odenwa_caution li {
+    text-indent: -1em;
+    padding-left: 1em;
+}
+
+.tel_btn a {
+    border-radius: 100px;
+    display: block;
+    width: 95%;
+    box-sizing: border-box;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 125, 183, 1) 0%, rgba(244, 139, 69, 1) 100%);
+    text-decoration: none;
+    text-align: center;
+    margin: 30px 2.5% 10px;
+    padding: 30px 0;
+}
+
+.tel_btn a span {
+    color: #FFF;
+    font-size: 1.6rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    padding: 37px 37px 37px 70px;
+    background: url(../img/tel-icon.png) left no-repeat;
+}
+
+.gentei {
+    color: #fff;
+    background: #9c9376;
+    padding: 4px 0 2px;
+    font-size: 2.3rem;
+    display: block;
+    font-weight: bold;
+    text-align: center;
+    width: 56%;
+    margin: 0 22% 20px;
+    letter-spacing: 2px;
+}
+
+.gentei-moji {
+    font-size: 1.6rem;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.mask {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.mask span {
+    background: url("../img/mask.png") right no-repeat;
+    padding: 20px 70px 20px 0;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #333;
+}
+
+.mask i {
+    color: #C75555;
+    font-size: 1.3rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-style: normal;
+}
+
+@media (max-width: 760px) {
+    .odenwa-wrap {
+        padding: 0 20px;
+    }
+    .odenwa {
+        margin-bottom: 30px;
+        padding: 20px;
+    }
+    .odenwa_caution {
+        margin: 0 0 20px 10px;
+        font-size: 0.9rem;
+    }
+    .tel_btn a {
+        border-radius: 100px;
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 125, 183, 1) 0%, rgba(244, 139, 69, 1) 100%);
+        text-decoration: none;
+        text-align: center;
+        margin: 10px 0;
+        padding: 15px 0;
+    }
+    .tel_btn a span {
+        color: #FFF;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        padding-left: 37px;
+        margin-right: -37px;
+        background: url(../img/tel-icon-sp.png) left no-repeat;
+    }
+    .gentei {
+        font-size: 1.3rem;
+        width: 80%;
+        margin: 0 10% 20px;
+        letter-spacing: 2px;
+    }
+    .gentei-moji {
+        font-size: 1.2rem;
+    }
+    .mask {
+        text-align: center;
+        margin-top: 0;
+    }
+    .mask span {
+        background: url("../img/mask.png") right no-repeat;
+        padding: 30px 75px 30px 0;
+        font-size: 1.1rem;
+        font-weight: 600;
+        letter-spacing: 2px;
+        display: inline-block;
+    }
+}
+
+
+/*ダーマペン施術について
+        ---------------------------------------------------------------------------*/
+
+.caution {
+    padding: 30px;
+    background: #fafaec;
+}
+
+.caution_wrap {
+    padding: 30px;
+    background: #fff;
+    border: solid 3px #9c9376;
+    color: #9c9376;
+}
+
+.caution_wrap h3 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 600;
+    margin-bottom: 50px;
+}
+
+.caution_wrap .lead1 {
+    background: url("../img/border.png") center no-repeat;
+    text-align: center;
+    margin-bottom: 0px;
+}
+
+.caution_wrap .lead2 {
+    text-align: center;
+    background: #fff;
+    padding: 0 20px;
+    color: #9c9376;
+    font-size: 1.05em;
+    font-weight: normal;
+}
+
+.caution_wrap .lead {
+    background: url("../img/border.png") center no-repeat;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.caution_wrap .lead span,
+.caution_wrap .lead1 span {
+    background: #fff;
+    padding: 0 20px;
+    color: #9c9376;
+    font-size: 0.95em;
+}
+
+.caution_wrap ul {
+    margin-bottom: 50px;
+}
+
+.caution_wrap li {
+    list-style: inside;
+    text-indent: -1.2em;
+    padding-left: 1.2em;
+}
+
+@media (max-width: 760px) {
+    .caution {
+        padding: 10px;
+    }
+}
+
+
+/*SP時のフッターの問い合わせボタン
+---------------------------------------------------------------------------*/
+
+.f-contact {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .f-contact {
+        display: block;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.6);
+        width: 100%;
+        padding: 5px 0;
+    }
+    .tel_btn3 a {
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 90%;
+        box-sizing: border-box;
+        background: rgb(2, 0, 36);
+        background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(255, 125, 183, 1) 0%, rgba(244, 139, 69, 1) 100%);
+        text-decoration: none;
+        text-align: center;
+        margin: 0 5%;
+        letter-spacing: 1px;
+        font-weight: bold;
+    }
+    .tel_btn3 a span {
+        color: #FFF;
+        font-size: 1.2rem;
+        letter-spacing: 2px;
+        padding: 10px 0 10px 37px;
+        background: url(../img/tel-icon-sp.png) left no-repeat;
+    }
+}
+
+
+/*SP時のヘッダーのトップ戻るボタン
+---------------------------------------------------------------------------*/
+
+.drawer-hamburger {
+    padding: 5px 0.4rem 5px !important;
+}

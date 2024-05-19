@@ -1,0 +1,568 @@
+sp_menu_leftsp_menu_leftsp_menu_leftsp_menu_rightsp_menu_rightsp_menu_rightsp_menu_rightsp_menu_rightsp_menu_rightsp_menu_right@charset "utf-8";
+@media only screen and (max-width:800px) {
+    * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    /*ヘッダー
+---------------------------------------------------------------------------*/
+    header {
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+        border-bottom-color: #CCC;
+    }
+    .header_inner {
+        padding-bottom: 2%;
+    }
+    /*margin
+---------------------------------------------------------------------------*/
+    .margin {
+        margin-top: 20px;
+    }
+    /*フッター
+---------------------------------------------------------------------------*/
+    .footmenu {
+        background-color: #FFF;
+    }
+}
+
+
+/*====================================================
+ *  ここから小ディスプレイ用（801px～1280px）環境の設定
+ =====================================================*/
+
+
+/*表示を切り替えるウィンドウサイズの指定*/
+
+@media (min-width:801px) and (max-width:1280px) {
+    .top_text img {
+        width: 35%;
+    }
+}
+
+
+/*====================================================
+ *  ここからタブレット用（481px～800px）環境の設定
+ =====================================================*/
+
+
+/*表示を切り替えるウィンドウサイズの指定*/
+
+@media (min-width:481px) and (max-width:800px) {
+    .tel {
+        display: none;
+    }
+    .access_map_sp {
+        width: 70%;
+        margin-top: 0;
+        margin-right: auto;
+        margin-bottom: 0;
+        margin-left: auto;
+    }
+    /*コンテンツ
+---------------------------------------------------------------------------*/
+    #contents {
+        width: auto;
+        margin: 0;
+    }
+    .contents {
+        width: auto;
+    }
+    .contents_in {
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    .top_in {
+        padding-top: 20px;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+    /*indexメインイメージ（タイトル）
+---------------------------------------------------------------------------*/
+    .indextitle h2 {
+        font-size: 2.0em;
+    }
+    /*NEWS
+---------------------------------------------------------------------------*/
+    #topick {
+        margin-top: 10px;
+    }
+    .topick_news {
+        height: 120px;
+    }
+    #news dt {
+        float: none;
+        width: 100%
+    }
+    #news dd {
+        float: none;
+        width: 100%;
+    }
+    /*カレンダー
+---------------------------------------------------------------------------*/
+    .icon_holiday img {
+        width: 20%;
+    }
+    /*診療科目
+---------------------------------------------------------------------------*/
+    .kamoku_list ul {
+        overflow: hidden;
+        margin-top: 0;
+    }
+    .kamoku_list li {
+        width: 47%;
+        margin-top: 10px;
+        margin-left: 1%;
+        line-height: 4.5;
+    }
+    /*病院概要
+---------------------------------------------------------------------------*/
+    #gaiyo {
+        margin-top: 10%;
+    }
+    .ga_right {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ga_left {
+        float: none;
+        width: 100%;
+    }
+    .time {
+        text-align: center
+    }
+    .footer_tel {
+        text-align: center;
+    }
+    .footer_card {
+        text-align: center;
+    }
+    /*診療のご案内
+---------------------------------------------------------------------------*/
+    .medi_menu_left {
+        margin-right: 1.2%;
+    }
+    .medi_menu_medium {
+        margin-right: 1.2%;
+    }
+    .medi_menu_right {
+        margin-right: 0;
+    }
+    /*ニキビ・痩身・脱毛メニュー
+---------------------------------------------------------------------------*/
+    #medical {
+        margin-top: 20px;
+    }
+    .medical_list {
+        font-size: 1.2em;
+    }
+    .medical_list img {
+        width: 30%;
+    }
+    .medical_list2 img {
+        width: 30%;
+    }
+    /*痩身施術
+---------------------------------------------------------------------------*/
+    .soshinimg img {
+        width: 80%;
+    }
+    /*パンくず
+---------------------------------------------------------------------------*/
+    #topicpath {
+        width: auto;
+        padding-right: 20px;
+        padding-left: 20px;
+    }
+}
+
+
+/*====================================================
+ *  ここからスマートフォン用（480px以下）環境の設定
+ =====================================================*/
+
+
+/*表示を切り替えるウィンドウサイズの指定*/
+
+@media (max-width: 480px) {
+    body {
+        font-size: 12px;
+    }
+    .logo {
+        width: 80%;
+    }
+    .tel {
+        display: none;
+    }
+    #totop {
+        display: none;
+    }
+    .copyright {
+        font-size: 10px;
+        padding: 15px 0 15px;
+    }
+    /*コンテンツ
+---------------------------------------------------------------------------*/
+    #contents {
+        width: auto;
+        margin: 0;
+    }
+    .contents_in {
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .top_in {
+        padding-top: 15px;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+    .contents_in h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    .top_in h2 {
+        font-size: 1.5em;
+        margin-bottom: 10px;
+    }
+    /*indexメインイメージ（タイトル）
+---------------------------------------------------------------------------*/
+    .indextitle h2 {
+        font-size: 1.8em;
+    }
+    /*フッター
+---------------------------------------------------------------------------*/
+    .footmenu {
+        padding: 10px 0;
+    }
+    /*診療時間テーブル
+---------------------------------------------------------------------------*/
+    .ta_time td {
+        width: auto;
+        padding: 2px;
+    }
+    /*テーブル内の左側の見出し部分*/
+    .ta_time th {
+        width: 100px;
+        padding: 2px;
+    }
+    .access_time {
+        float: none;
+    }
+    /*ルート案内
+---------------------------------------------------------------------------*/
+    .access_route_left {
+        float: none;
+        width: 100%;
+    }
+    .access_route_right {
+        float: none;
+        width: 100%;
+    }
+    /*NEWS
+---------------------------------------------------------------------------*/
+    #topick {
+        margin-top: 10px;
+    }
+    .topick_news {
+        height: 100px;
+    }
+    #news dt {
+        float: none;
+        width: 100%
+    }
+    #news dd {
+        float: none;
+        width: 100%;
+    }
+    /*カレンダー
+---------------------------------------------------------------------------*/
+    .icon_holiday img {
+        width: 30%;
+    }
+    /*当院について
+---------------------------------------------------------------------------*/
+    .about_right img {
+        display: block;
+        margin: auto;
+    }
+    .about_left {
+        float: none;
+        width: 100%;
+    }
+    .name_clinic {
+        font-size: 14px;
+        margin-top: 20px;
+    }
+    .name_dr {
+        font-size: 18px;
+    }
+    /*診療科目
+---------------------------------------------------------------------------*/
+    #medical {
+        margin-top: 10px;
+    }
+    .kamoku_list ul {
+        overflow: hidden;
+        margin-top: 0;
+    }
+    .kamoku_list li {
+        width: 47%;
+        margin-top: 10px;
+        margin-left: 1%;
+        line-height: 4.5;
+    }
+    /*ニキビ・痩身・脱毛メニュー
+---------------------------------------------------------------------------*/
+    #medical_list {
+        margin-top: 20px;
+    }
+    .medical_list {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 2.5%;
+    }
+    .medical_list:last-child {
+        margin-bottom: 0;
+    }
+    .medical_list img {
+        width: 25%;
+        padding-right: 6%;
+    }
+    .list_sp img {
+        width: 25%;
+        padding-right: 6%;
+    }
+    /*点滴バー
+---------------------------------------------------------------------------*/
+    .drip {
+        margin-bottom: 30px;
+    }
+    .table_02 th {
+        width: 45%;
+    }
+    /*病院概要
+---------------------------------------------------------------------------*/
+    #gaiyo {
+        margin-top: 10%;
+    }
+    .ga_right {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .ga_left {
+        float: none;
+        width: 100%;
+    }
+    .time img {
+        width: 100%;
+    }
+    .footer_tel {
+        text-align: center;
+    }
+    .footer_tel img {
+        width: 100%;
+    }
+    .footer_card {
+        text-align: center;
+    }
+    .footer_card img {
+        width: 100%;
+    }
+    /*当院について
+---------------------------------------------------------------------------*/
+    .about_right {
+        width: 40%;
+        margin-left: 10px;
+    }
+    .about_caution ul {
+        padding-left: 10px;
+    }
+    .about_caution li {
+        list-style-position: outside;
+    }
+    /*診療のご案内
+---------------------------------------------------------------------------*/
+    .medi_banner {
+        overflow: hidden;
+        width: 100%;
+    }
+    .medi_menu_left {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+    .medi_menu_medium {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 4%;
+    }
+    .medi_menu_right {
+        float: none;
+    }
+    .menu_left {
+        float: none;
+        width: 100%;
+    }
+    .menu_right {
+        float: none;
+        width: 100%;
+        margin-top: 10px;
+    }
+    .menu_half {
+        width: 100%;
+    }
+    .medi_image {
+        width: 100%;
+    }
+    /*痩身施術
+---------------------------------------------------------------------------*/
+    .soshin img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    .soshinimg {
+        overflow: hidden;
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+    .soshinimg img {
+        width: 100%;
+    }
+    .after img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+    .after p {
+        margin-top: 10px;
+    }
+    /*ニキビ治療
+---------------------------------------------------------------------------*/
+    .nikibi img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    /*脱毛
+---------------------------------------------------------------------------*/
+    .datsumou img {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+        margin-bottom: 2%;
+    }
+    /*よくある質問
+---------------------------------------------------------------------------*/
+    .wrapper_question {
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+    .question img {
+        width: 40px;
+    }
+    .question_icon {
+        padding: 0 5px 0 0;
+    }
+    /*パンくず
+---------------------------------------------------------------------------*/
+    #topicpath {
+        width: auto;
+        padding-right: 15px;
+        padding-left: 15px;
+    }
+}
+
+
+/*================================================
+ *  表示・非表示　切り替え
+ ================================================*/
+
+
+/*================================================
+ *  PCで非表示
+ ================================================*/
+
+@media print,
+screen and (min-width:799px) {
+    .none_pc {
+        display: none
+    }
+    /*グローバルメニュー
+---------------------------------------------------------------------------*/
+    #menu_sp {
+        display: none;
+    }
+    /*メインイメージ
+---------------------------------------------------------------------------*/
+    .index_img_sp {
+        display: none;
+    }
+}
+
+
+/*================================================
+ *  PCとタブレットで非表示
+ ================================================*/
+
+@media print,
+screen and (min-width:481px) {
+    .none_pctab {
+        display: none
+    }
+    /*ページトップへもどる
+---------------------------------------------------------------------------*/
+    #pagetop {
+        display: none;
+    }
+    /*リスト
+---------------------------------------------------------------------------*/
+    .name_sp {
+        display: none;
+    }
+}
+
+
+/*================================================
+ *  スマホで非表示
+ ================================================*/
+
+@media screen and (max-width: 481px) {
+    .none_sp {
+        display: none
+    }
+    /*リスト
+---------------------------------------------------------------------------*/
+    .name_pc {
+        display: none;
+    }
+}
+
+
+/*================================================
+ *  スマホとタブレットで非表示
+ ================================================*/
+
+@media screen and (max-width: 799px) {
+    .none {
+        display: none
+    }
+    /*グローバルメニュー
+---------------------------------------------------------------------------*/
+    #menu_pc {
+        display: none;
+    }
+    /*メインイメージ
+---------------------------------------------------------------------------*/
+    .index_img_pc {
+        display: none;
+    }
+}

@@ -1,0 +1,135 @@
+#menu_sp {
+    display: none;
+}
+
+/* メニューのオンオフ　※常に表示オフ */
+.menu-checkbox {
+    display: none;
+}
+
+/*　SPメニュー一覧 */
+.drawer-nav {
+    position: absolute;
+    left: 100%;
+    top: 63.5px;
+    height: calc(100vh - 63.5px);
+    transition: all .5s;
+    z-index: 2;
+}
+
+.menu-checkbox:checked~.drawer-nav {
+    left: 50%;
+}
+
+/*　SPメニュー裏の黒い背景 */
+.drawer-blackscreen {
+    display: none;
+    background-color: rgb(13 13 13 / 34%);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 63.5px;
+    left: 0;
+    z-index: 1;
+}
+
+.menu-checkbox:checked~.drawer-blackscreen {
+    display: block;
+}
+
+/* ハンバーガーメニュー */
+label.label-drawer-hamburger {
+    width: 43px;
+    height: 43px;
+    background-color: #d9cdbf;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    top: 10px;
+    right: 10px;
+    position: absolute;
+}
+
+.hamburger-line {
+    width: 30px;
+    height: 2px;
+    position: absolute;
+    left: 6.5px;
+    background-color: #fff;
+    transition: all .5s;
+}
+
+.hamburger-line:nth-child(1) {
+    top: 11.5px;
+}
+
+.hamburger-line:nth-child(2) {
+    top: 20.5px;
+    transform: scale(1);
+}
+
+.hamburger-line:nth-child(3) {
+    top: 29.5px;
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+    width: 36px;
+    left: 2.5px;
+    transform-origin: center;
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(2) {
+    transform: scale(0);
+}
+
+.menu-checkbox:checked~label.label-drawer-hamburger>.hamburger-line:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+    width: 36px;
+    left: 2.5px;
+    transform-origin: center;
+}
+
+
+/* 電話アイコン */
+.sp-tel {
+    display: none;
+}
+
+.sp-tel img {
+    width: 27px;
+    padding: 8px;
+    border-radius: 7px;
+    position: absolute;
+    right: 63px;
+    top: 9px;
+}
+
+@media (max-width: 800px) {
+    #menu_sp {
+        display: block;
+    }
+
+    .sp-tel {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 801px) {
+    #header {
+        min-height: 158px;
+    }
+
+    #time {
+        min-height: 519px;
+    }
+
+    #footer{
+        min-height: 813px;
+    }
+}
+@media screen and (min-width: 1021px) {
+        #footer{
+        min-height: 413.234px;
+    }
+}

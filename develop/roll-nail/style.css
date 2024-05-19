@@ -1,0 +1,97 @@
+@charset "utf-8";
+#contents {
+    font-size: 16px !important;
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.flex-container picture {
+    width: 55%;
+    max-width: 250px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.flex-container p {
+    width: 95%;
+    max-width: 700px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.merit-section {
+    margin-top: 30px;
+}
+
+.tel-button {
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    border: #996299 1px solid;
+    border-radius: 15px;
+    width: 95%;
+    max-width: 250px;
+    padding: 10px 0;
+}
+
+.tel-button:hover {
+    background-color: #996299;
+    color: white;
+}
+
+.meister-merit-list,
+.nail-attention-list {
+    width: 98%;
+    margin-right: 0;
+    margin-left: auto;
+}
+
+.meister-merit-list li,
+.nail-attention-list li {
+    list-style: disc;
+}
+
+.charge-table {
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    border: #996299 1px solid;
+}
+
+.charge-table tr:first-child {
+    border-bottom: #996299 1px solid;
+    background: #f3f0f5;
+}
+
+.charge-table th:first-child,
+.charge-table td:first-child {
+    border-right: #996299 1px solid;
+}
+
+.charge-table th,
+.charge-table td {
+    padding: 10px 0;
+}
+
+@media screen and (max-width: 999px) {
+    .meister-merit-list,
+    .nail-attention-list {
+        width: 95%;
+        margin-right: 0;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width: 1000px) {
+    .flex-container picture {
+        margin-top: 0;
+    }
+    .flex-container p {
+        margin-top: 0;
+        margin-left: 50px;
+    }
+}

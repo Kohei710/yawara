@@ -1,0 +1,544 @@
+@charset "utf-8";
+	.SP{ display: none;}
+	.PC{ display: block;}
+@media screen and (max-width: 1024px) {
+	.SP{ display: block !important;}
+	.PC{ display: none !important;}
+	body{
+		width: 100%;
+	}
+	#container{
+		width: 100%;
+		max-width: 100%;
+		overflow-x: hidden;
+		font-size:3.5vw;
+	}
+/*--header-------------------------------------------------------*/
+#header{
+	width: 100%;
+	text-align:center;
+	padding:30px 0;
+	position: relative;
+}
+
+#header #logo{
+	float:none;
+	text-align: center;
+}
+	#header #logo img{ width:150px; height: auto;}
+#header .hbox{
+	display: none;
+	}
+/*--header end-------------------------------------------------------*/
+
+/*--content-------------------------------------------------------*/
+#content{
+	width:100%;
+	height:auto;
+	margin: 0 auto;
+	padding:0;
+	clear: both;
+	text-align: left;
+}
+
+/*--main content end-------------------------------------------------------*/
+/*--footer-------------------------------------------------------*/
+
+#footer{
+	padding:50px 10vw;
+	font-size: 1em;
+}
+#footer .flogo{ padding-bottom:20px;}
+address{ font-size:0.9em; font-style: normal;  padding:8px;}
+	#fkotei{
+		position: fixed;
+		left:0;
+		bottom:0;
+		z-index: 9999;
+  	display: -webkit-flex !important;
+  	display: flex !important;
+ 	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+	justify-content: center;
+		width:100%;
+	}
+	#fkotei li{
+		width: 50%;
+	}
+	#fkotei li img{
+		width: 100%;
+		
+	}
+/*--footer end-------------------------------------------------------*/	
+#visual{
+	background:none;
+	margin:0;
+}
+	#visual .wrap{
+		width: 100%;
+	}	
+	#visual img{
+		width:100%;
+		height: auto;
+	}
+#visual .txt{
+	text-align: center;
+	padding:0;
+	margin-top:-10vw;
+}
+.inqbox{
+	border-radius: 0;
+	padding:1em;
+}
+.inqbox .inq{
+	width: 100%;
+}
+.inqbox .inq p:first-child{
+	padding:5px 0 20px;
+}
+.inqbox .inq p{ text-align: center;}
+.inqbox .day{
+	width: 100%;
+	padding-top:20px;
+}
+	.inqbox .day img{ width:100%;}
+
+.lp1{
+	text-align: center;
+	padding-bottom:5vw;
+}
+	.lp1 img{
+		width: 100%;
+	}
+
+#lp2{
+	text-align: center;
+	padding:3vw 5vw 6vw;
+	font-size:0.8em;
+}
+#lp2 h2{
+	background: url("img/ttl_bg.png") no-repeat center bottom;
+	padding-bottom:45px;
+	font-size:2em;
+	letter-spacing: 3px;
+	font-weight: 600;
+	line-height: 1.5em;
+	margin-bottom:30px;
+}
+
+#lp2 .img{
+	margin-top:0;
+	position: relative;
+	z-index: 1;
+	margin:0 -5vw;
+}
+	#lp2 .img img{ width:100%;}
+
+#point{
+	padding-top:5vw;
+	padding-bottom:0;
+}
+.point{
+	position: relative;
+	padding:2em 1em 1em;
+	margin-bottom:8vw;
+}
+.point .num{
+	position: absolute;
+	top:-20px;
+	left:48%;
+}
+	.point .num img{
+		width:25px;
+	}
+.point h2{
+	font-size:1.6em;
+	line-height: 1.6em;
+	letter-spacing: 3px;
+	padding-bottom:5vw;
+	text-align: center;
+}
+.point .pic{
+	float:none;
+	width: 100%;
+	text-align: left;
+}
+.point .txt{
+	float:none;
+	width: 100%;
+	padding:1em 0;
+}
+.point2 .pic{
+	float:right;
+	text-align: right;
+}
+.point2 .txt{
+	float:left;
+	
+}
+.point .txt p{
+	font-size:1.1em;
+	line-height: 2.2em;
+}
+.point .txt p em{ border-bottom:solid 2px #996299; padding-bottom:3px;}
+
+.midashi1{
+	background: #996299;
+	color:#fff;
+	font-size:1.3em;
+	letter-spacing: 3px;
+	font-weight: bold;
+	padding:15px 15px 20px;
+	text-align: center;
+	margin-bottom:8vw;
+}
+
+.inqbox2{
+	margin:0 0 10vw;
+}
+.inqbox2 .wrap{
+	  	display: -webkit-flex;
+  	display: flex;
+ 	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+	justify-content: space-between;	
+	padding:25px 15px 25px 20px;
+}
+.inqbox2 .inq{
+	width: 41.5%;
+}
+.inqbox2 .inq p:first-child{
+	padding:5px 0 20px;
+}
+.inqbox2 .inq p{ text-align: center;}
+.inqbox2 .day{
+	width: 57%;
+	text-align: right;
+}
+
+#flow{
+	text-align: center;
+	padding-bottom:10vw;
+}
+	#flow ol{
+		width: 90%;
+		margin:0 auto 30px;
+	}
+	#flow ol li{
+		padding-bottom:1em;
+		text-align: left;
+	}
+	#flow ol li h3{
+		background: #f5eff5;
+		border-radius: 5px;
+		color:#996299;
+		font-weight: bold;
+		text-align: left;
+		font-size:1.1em;
+		padding:0.7em 1.5em;
+		margin-bottom:10px;
+	}
+	#flow ol li h3 span{
+		font-weight: bold;
+		font-size:1.3em;
+		padding-right:15px;
+		border-right:solid 1px #c7a8c7;
+		margin-right:15px;
+	}
+	#flow ol li p{line-height: 1.6em;}
+	#flow p .SP{
+		width: 90%;
+		margin:0 auto;
+		display: block;
+	}
+.ttl1{
+	text-align: center;
+	font-weight: bold;
+	font-size:1.9em;
+	letter-spacing: 2px;
+	padding-bottom:35px;
+	position: relative;
+	margin-bottom:60px;
+}
+.ttl1::after{
+	position: absolute;
+	left:47%;
+	content: "";
+	width:24px;
+	height: 2px;
+	background: #996299;
+	bottom:0;
+}
+
+#price{
+	text-align: center;
+	padding:10vw 0 0;
+	background: #faf7fa;
+}
+#price .alignC{
+	padding-bottom:5vw;
+	margin:0 auto;
+}
+	#price .alignC .SP{
+		display: block;
+		margin:0 auto;
+	}
+	#price .inqbox{
+		margin:0 -5vw;
+	}
+	#price .pricebox{
+		background:#fff;
+		padding:2em 1em;
+		text-align: left;
+	}
+	#price .pricebox table{
+		width: 100%;
+		font-size:1.1em;
+		text-align: center;
+		margin:0 0 1em;
+	}
+	#price .pricebox table th{
+		color:#996299;
+		font-size:1.1em;
+		padding:0.5em 0;
+		border-bottom:solid 1px #996299;
+	}
+	#price .pricebox table td{
+		padding:0.5em 0;
+		border-bottom:solid 1px #cccccc;
+	}
+	#price .pricebox p{
+		font-size:0.9em;
+		line-height: 1.5em;
+		padding-bottom:2em;
+	}
+	#price .pricebox h3{
+		color:#996299;
+		font-weight: bold;
+		font-size:1.1em;
+		text-align: center;
+		line-height: 1.4em;
+	}
+#gaiyo{
+	padding:10vw 0;
+}
+#gaiyo table{
+	width: 100%;
+	margin:0 auto;
+}
+#gaiyo table th{
+	padding:10px 0;
+}
+#gaiyo table td{
+	padding:10px 0;
+}
+.ttl1{
+	padding-bottom:3vw;
+	position: relative;
+	margin-bottom:6vw;
+}
+#faq{
+	padding:10vw 0;
+	background: #faf7fa;
+}
+#faq dl{
+	padding:10px 0;
+}
+#faq dl dt{
+	background: url(img/faq_q.png) no-repeat left top;
+	background-size: 26px auto;
+	font-size:1.3em;
+	padding:0 0 15px 35px;
+}
+#faq dl dd{
+	background: url(img/faq_a.png) no-repeat left top;
+	background-size: 26px auto;
+	font-size:1em;
+	line-height: 2em;
+	padding:0 0 30px 35px;
+	border-bottom:solid 1px #cccccc;
+	margin-bottom:20px;
+}
+#faq dl dd:last-of-type{border:none; margin-bottom:0;}
+
+#clinic{
+	padding:10vw 0 7vw;
+}
+#clinic p{ padding-bottom:13vw;}
+#clinic .fpic{
+	width: 100%;
+}
+#clinic .fpic img{ width:100%; height:auto;}
+	#clinic .SP{ width:100%;}
+#access{
+	padding:3vw 0 10vw;
+}
+#access .map{
+	margin-bottom:5vw;
+}
+	#access .map iframe{
+		height: 45vw;
+	}
+#access table{
+	width: 100%;
+	margin:0 auto;
+}
+#access table th{
+	display: block;
+	width: 100%;
+	padding:0;
+}
+#access table td{
+	display: block;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding:5px 0 20px;
+}
+
+#cal{
+	padding:10vw 0;
+}
+#cal .wrap{
+	max-width:622px;
+}
+#cal ul{
+	width:80%;
+	margin:0 auto;
+	padding-bottom:0;
+	justify-content: center;
+}
+	#cal ul li{
+		padding-bottom:2em;
+	}
+#cal p{
+	padding-bottom:4vw;
+}
+	#cal p .SP{
+		width: 100%;
+		margin-bottom:0;
+	}
+#contact{
+	
+}
+#contact .inqbox3{
+	background: #f0e8f0;
+	padding:5vw 7vw 4vw;
+	border-radius: 0;
+	position: relative;
+	top:0;
+	margin:0 -5vw 10vw;
+}
+#contact .inqbox3 h2{
+	text-align: center;
+	padding-bottom:5px;
+}
+#contact .inqbox3 ul{
+	  	display: -webkit-flex;
+  	display: flex;
+ 	-webkit-flex-wrap:wrap;
+	flex-wrap:wrap;
+	justify-content: center;
+ 	-webkit-align-items: center; /* 縦方向中央揃え（Safari用） */
+ 	align-items: center; /* 縦方向中央揃え */	
+}
+#contact .inqbox3 ul li{
+	width:100%;
+	padding-bottom:1em;
+	text-align: center;
+}
+#form{
+	max-width:540px;
+	margin:0 auto;
+	padding-bottom:10vw;
+}
+#form h3{
+	font-size:1.1em;
+	font-weight: bold;
+	color:#996299;
+	padding-bottom:10px;
+}
+#form table{
+	width: 100%;
+	margin:0 0 4vw;
+}
+
+#form table th{
+	display: block;
+	width: 100%;
+	padding:15px 20px 5px 20px;
+	letter-spacing: 2px;
+}
+#form table th span{
+	background: #996299;
+	color:#fff;
+	margin-left:10px;
+	font-size:0.7em;
+	padding:1px 5px 2px;
+}
+#form table td{
+	display: block;
+	padding:0 20px 15px 20px;
+}
+#form table td input[type="text"]{
+	width:80%;
+	background: #fff;
+	border:solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	font-size:16px;
+	padding:0 5px;
+}
+#form table td label{
+	margin-right:30px;
+}
+#form table td label input{ margin-right:5px;}
+#form table td .w60{
+	width:60px !important;
+	margin-right:10px;
+}
+#form table td input[type="email"]{
+	width:100%;
+	background: #fff;
+	font-size:16px;
+	border:solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	padding:0 5px;
+}
+#form table td input[type="tel"]{
+	width:180px;
+	font-size:16px;
+	background: #fff;
+	border:solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	padding:0 5px;
+}
+#form table td select{
+	background: #fff;
+	border:solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	font-size:16px;
+	padding:0 5px;
+	margin-bottom:10px;
+}
+#form .btn input{
+	background: #996299;
+	color:#fff;
+	font-weight: bold;
+	font-size:1.05em;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	padding:15px;
+	font-size:16px;
+	display: block;
+	width: 300px;
+	margin:0 auto;
+	border:none;
+	-webkit-appearance:none;
+}
+#thanks{
+	padding:10vw 0;
+}	
+}

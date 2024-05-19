@@ -1,0 +1,57 @@
+.selfListWrapper {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    gap: 10px 0;
+    /* selfList要素が偶数個の場合はコメントアウトすること */
+    &::after {
+        content: "";
+        display: flex;
+        width: 49%;
+    }
+}
+
+.selfList {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 49%;
+    height: 100px;
+    line-height: 100px;
+
+    @media screen and (max-width:700px) {
+        width: 100%;
+    }
+
+    & .selfList__content {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+
+        & img {
+            width: 30%;
+            height: 100px;
+            object-fit: cover;
+        }
+
+        & p {
+            font-size: 90%;
+            line-height: 150%;
+            display: inline-block;
+            vertical-align: middle;
+            min-width: 220px;
+            margin-left: 5px;
+        }
+    }
+
+
+    & .selfList__arrow {
+        flex: 0;
+        width: 30px;
+        aspect-ratio: 1;
+        object-fit: contain;
+        vertical-align: middle;
+    }
+}

@@ -1,0 +1,53 @@
+    @charset "UTF-8";
+    .nmn_img {
+        text-align: center;
+    }
+    
+    .nmn_flex {
+        display: flex;
+    }
+    
+    .effect_list {
+        width: 120%;
+    }
+    
+    a.link {
+        font-weight: bold;
+        color: #996299;
+    }
+    
+    .discount-guide {
+        text-align: center;
+    }
+    
+    .discount-guide {
+        bottom: 10px;
+        left: 10px;
+        z-index: 99;
+        width: 95%;
+        max-width: 716px;
+        margin: 5% auto;
+    }
+    
+    .discount-guide a {
+        display: block;
+        text-align: center;
+        width: 94%;
+        margin: 0 auto;
+        border-radius: 10px;
+        background: #996299;
+        color: white;
+        font-weight: bold;
+        padding: 3%;
+        letter-spacing: 0.1rem;
+        font-size: 24px;
+    }
+    
+    @media screen and (min-width:800px) {
+        .nmn_top_img {
+            width: 30%;
+        }
+        .discount-guide a {
+            font-size: 1.6rem;
+        }
+    }

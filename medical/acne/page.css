@@ -1,0 +1,759 @@
+@charset "utf-8";
+/* CSS Document */
+
+#visual {
+	background: url("img/main.webp") no-repeat center top;
+	background-size: 100% auto;
+	margin: 0 auto 80px;
+	max-width: 1440px;
+}
+
+#visual .PC {
+	margin-left: auto;
+}
+
+#visual .txt {
+	text-align: right;
+	padding: 40px 0 30px;
+}
+
+#header {
+	& .hbox {
+		span:last-child>a {
+			display: block;
+			background: #996299;
+			color: white;
+			padding: 10px;
+			text-align: center;
+			font-size: 26px;
+			border-radius: 5px;
+		}
+	}
+}
+
+.inqbox {
+	background: #f0e8f0;
+	border-radius: 10px;
+	padding: 25px 20px 25px 25px;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.inqbox .inq {
+	width: 41.5%;
+}
+
+.inqbox .inq p:first-child {
+	padding: 5px 0 20px;
+}
+
+.inqbox .inq p {
+	text-align: center;
+
+	&:last-child a {
+		display: block;
+		background: #996299;
+		color: white;
+		padding: 10px;
+		text-align: center;
+		font-size: 26px;
+		border-radius: 5px;
+	}
+}
+
+.inqbox .day {
+	width: 57%;
+}
+
+.lp1 {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+.lp1 .PC {
+	margin: 0 auto;
+}
+
+#lp2 {
+	text-align: center;
+	padding-bottom: 80px;
+}
+
+#lp2 h2 {
+	background: url("img/ttl_bg.png") no-repeat center bottom;
+	padding-bottom: 45px;
+	font-size: 2.2em;
+	letter-spacing: 3px;
+	font-weight: 600;
+	line-height: 1.5em;
+	margin-bottom: 30px;
+}
+
+#lp2 h2 span {
+	font-size: 0.6em;
+}
+
+#lp2 p {
+	display: block;
+	width: 90%;
+	max-width: 620px;
+	text-align: left;
+	margin: 0 auto;
+	font-size: 1.1em;
+	line-height: 2.4em;
+	letter-spacing: 2px;
+	position: relative;
+	z-index: 2;
+}
+
+#lp2 p em {
+	color: #996299;
+}
+
+#lp2 .img {
+	margin-top: -80px;
+	position: relative;
+	z-index: 1;
+}
+
+#lp2 .img .PC {
+	margin: 0 auto;
+}
+
+#point {
+	padding-bottom: 0;
+}
+
+.point {
+	position: relative;
+	background: #f5eff5;
+	padding: 60px;
+	margin-bottom: 80px;
+}
+
+.point .num {
+	position: absolute;
+	top: -40px;
+	left: 48%;
+}
+
+.point h2 {
+	font-weight: 600;
+	font-size: 2em;
+	letter-spacing: 3px;
+	padding-bottom: 50px;
+	text-align: center;
+}
+
+.point .pic {
+	float: left;
+	width: 60%;
+	text-align: left;
+}
+
+.point .txt {
+	float: right;
+	width: 38%;
+}
+
+.point2 .pic {
+	float: right;
+	text-align: right;
+}
+
+.point2 .txt {
+	float: left;
+
+}
+
+.point .txt p {
+	font-size: 1.1em;
+	line-height: 2.2em;
+}
+
+.point .txt p em {
+	border-bottom: solid 2px #996299;
+	padding-bottom: 3px;
+}
+
+.midashi1 {
+	background: #996299;
+	color: #fff;
+	font-size: 1.3em;
+	letter-spacing: 3px;
+	font-weight: bold;
+	padding: 25px 15px 30px;
+	text-align: center;
+	margin-bottom: 80px;
+}
+
+.inqbox2 {
+	background: #f0e8f0;
+	margin: 0 0 100px;
+}
+
+.inqbox2 .wrap {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 25px 15px 25px 20px;
+}
+
+.inqbox2 .inq {
+	width: 41.5%;
+}
+
+.inqbox2 .inq p:first-child {
+	padding: 5px 0 20px;
+}
+
+.inqbox2 .inq p {
+	text-align: center;
+	&:last-child a{
+		display: block;
+    background: #996299;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    font-size: 26px;
+    border-radius: 5px;
+	}
+}
+
+.inqbox2 .day {
+	width: 57%;
+	text-align: right;
+}
+
+#flow {
+	text-align: center;
+	padding-bottom: 100px;
+}
+
+#flow .PC {
+	display: block;
+	margin: 0 auto;
+}
+
+.ttl1 {
+	text-align: center;
+	font-weight: bold;
+	font-size: 1.9em;
+	letter-spacing: 2px;
+	padding-bottom: 35px;
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.ttl1::after {
+	position: absolute;
+	left: 49%;
+	content: "";
+	width: 24px;
+	height: 2px;
+	background: #996299;
+	bottom: 0;
+}
+
+#price {
+	text-align: center;
+	padding: 100px 0 40px;
+	background: #faf7fa;
+}
+
+#price .alignC {
+	padding-bottom: 50px;
+}
+
+#price .alignC .PC {
+	display: block;
+	margin: 0 auto;
+}
+
+.table__wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	align-items: flex-start;
+	gap: 50px;
+}
+
+#price {
+	text-align: center;
+	padding: 10vw 0 0;
+	background: #faf7fa;
+}
+
+#price .alignC {
+	padding-bottom: 5vw;
+	margin: 0 auto;
+
+	&~img {
+		display: block;
+		margin: 0 auto;
+	}
+}
+
+#price .alignC .SP {
+	display: block;
+	margin: 0 auto;
+}
+
+#price .inqbox {
+	margin: 0 -5vw;
+}
+
+#price .pricebox {
+	background: #fff;
+	padding: 2em 1em;
+	text-align: left;
+}
+
+#price .pricebox table {
+	width: 100%;
+	font-size: 1.1em;
+	text-align: center;
+}
+
+#price .pricebox table th {
+	color: #996299;
+	font-size: 1.1em;
+	padding: 0.5em 0;
+	border-bottom: solid 1px #996299;
+}
+
+#price .pricebox table td {
+	padding: 0.5em 0;
+	border-bottom: solid 1px #cccccc;
+	vertical-align: middle;
+	line-height: 1.5;
+}
+
+#price .pricebox table tr:last-child td {
+	border-bottom: none;
+	text-align: right;
+	font-size: .8em;
+}
+
+#price .pricebox p {
+	font-size: 0.9em;
+	line-height: 2em;
+}
+
+#price .pricebox h3 {
+	color: #996299;
+	font-weight: bold;
+	font-size: 1.1em;
+	text-align: center;
+	line-height: 1.4em;
+	margin: 2em 0 0;
+}
+
+.pricebox__points {
+	margin: 41.67px 0 0;
+}
+
+.pricebox__caption {
+	position: relative;
+
+	& .pricebox__iconMessage {
+		display: inline-block;
+		background-color: #996299;
+		color: white;
+		text-transform: uppercase;
+		padding: 5px 10px;
+	}
+}
+
+.pricebox__icon {
+	width: 60px;
+}
+
+
+
+.gaiyo {
+	padding: 100px 0;
+}
+
+.gaiyo table {
+	width: min(100%, 500px);
+	margin: 0 auto;
+}
+
+.gaiyo table th {
+	color: #996299;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 15px 20px 15px;
+	border-bottom: solid 1px #cccccc;
+	width: 25%;
+	font-size: 18px;
+}
+
+.gaiyo table td {
+	font-weight: 400;
+	letter-spacing: 2px;
+	padding: 15px 0 15px 20px;
+	border-bottom: solid 1px #cccccc;
+	font-size: 16px;
+}
+
+
+
+.otherDereguration {
+	& .otherDereguration__heading {
+		padding: 5px 10px;
+		font-size: 16px;
+		text-align: left;
+		color: #333;
+	}
+
+	& .otherDereguration__list {
+		width: 100%;
+		display: flex;
+		flex-wrap: wrap;
+		align-items: stretch;
+
+		& dt {
+			width: 40%;
+			font-size: 16px;
+			font-weight: 400;
+			border-bottom: 1.5px solid white;
+			background-color: #dfdfdf;
+			padding: 5px 10px;
+		}
+
+		& dd {
+			background-color: #ececec;
+			border-bottom: 1.5px solid white;
+			padding: 5px 10px;
+			width: 60%;
+			font-weight: 400;
+			font-size: 16px;
+		}
+	}
+}
+
+
+.bordernone th,
+.bordernone td {
+	border: none !important;
+}
+
+#faq {
+	padding: 100px 0;
+	background: #faf7fa;
+}
+
+#faq dl {
+	padding: 10px 0;
+}
+
+#faq dl dt {
+	background: url(img/faq_q.png) no-repeat left top;
+	font-size: 1.6em;
+	color: #996299;
+	padding: 10px 0 30px 75px;
+}
+
+#faq dl dd {
+	background: url(img/faq_a.png) no-repeat left top;
+	font-size: 1.1em;
+	line-height: 2em;
+	padding: 0 0 30px 75px;
+	border-bottom: solid 1px #cccccc;
+	margin-bottom: 20px;
+}
+
+#faq dl dd:last-of-type {
+	border: none;
+	margin-bottom: 0;
+}
+
+#clinic {
+	padding: 100px 0;
+}
+
+#clinic p {
+	padding-bottom: 130px;
+}
+
+#clinic .fpic {
+	width: 100%;
+}
+
+#clinic .fpic img {
+	width: 100%;
+	height: auto;
+}
+
+#access {
+	padding: 30px 0 100px;
+}
+
+#access .map {
+	margin-bottom: 70px;
+}
+
+#access table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+#access table th {
+	color: #996299;
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 15px 40px 15px 0;
+}
+
+#access table td {
+	font-weight: bold;
+	letter-spacing: 2px;
+	padding: 15px 0;
+}
+
+#cal {
+	padding: 100px 0;
+	background: #faf7fa;
+}
+
+#cal .wrap {
+	max-width: 622px;
+}
+
+#cal ul {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding-bottom: 30px;
+}
+
+#cal p {
+	padding-bottom: 40px;
+}
+
+#contact {}
+
+#contact .inqbox3 {
+	background: #f0e8f0;
+	padding: 30px 70px 40px;
+	border-radius: 5px;
+	position: relative;
+	top: -60px;
+}
+
+#contact .inqbox3 h2 {
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+#contact .inqbox3 ul {
+	display: -webkit-flex;
+	display: flex;
+	-webkit-flex-wrap: wrap;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	-webkit-align-items: center;
+	/* 縦方向中央揃え（Safari用） */
+	align-items: center;
+	/* 縦方向中央揃え */
+}
+
+#contact .inqbox3 ul li {
+	width: 50%;
+
+	&:last-child a {
+		display: block;
+		background: #996299;
+		color: white;
+		padding: 10px;
+		text-align: center;
+		font-size: 26px;
+		border-radius: 5px;
+	}
+}
+
+#form {
+	max-width: 540px;
+	margin: 0 auto;
+	padding-bottom: 100px;
+}
+
+#form h3 {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #996299;
+	padding-bottom: 10px;
+}
+
+#form table {
+	width: 100%;
+	margin: 0 0 40px;
+}
+
+#form table .bg {
+	background: #f5eff5;
+}
+
+#form table th {
+	width: 210px;
+	padding: 15px 15px 15px 20px;
+	letter-spacing: 2px;
+}
+
+#form table th span {
+	background: #996299;
+	color: #fff;
+	margin-left: 10px;
+	font-size: 0.7em;
+	padding: 1px 5px 2px;
+}
+
+#form table td {
+	padding: 10px 15px 15px 0;
+}
+
+#form table td input[type="text"] {
+	width: 80%;
+	background: #fff;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	padding: 0 5px;
+}
+
+#form table td label {
+	margin-right: 30px;
+}
+
+#form table td label input {
+	margin-right: 5px;
+}
+
+#form table td .w60 {
+	width: 60px !important;
+	margin-right: 10px;
+}
+
+#form table td input[type="email"] {
+	width: 100%;
+	background: #fff;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	padding: 0 5px;
+}
+
+#form table td input[type="tel"] {
+	width: 180px;
+	background: #fff;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	padding: 0 5px;
+}
+
+#form table td select {
+	background: #fff;
+	border: solid 1px #ccc;
+	border-radius: 5px;
+	height: 34px;
+	padding: 0 5px;
+	margin: 10px 0 0;
+}
+
+#form .btn input {
+	background: #996299;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.05em;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	padding: 13px;
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	border: none;
+	cursor: pointer;
+}
+
+#form .btn input:hover {
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+	-webkit-transition: all 0.5s ease;
+	-moz-transition: all 0.5s ease;
+	-o-transition: all 0.5s ease;
+	transition: all 0.5s ease;
+}
+
+#thanks {
+	padding: 100px 0;
+}
+
+#thanks .btn {
+	padding-top: 40px;
+}
+
+#thanks .btn a {
+	background: #996299;
+	color: #fff;
+	font-weight: bold;
+	font-size: 1.05em;
+	letter-spacing: 2px;
+	border-radius: 5px;
+	padding: 13px;
+	text-align: center;
+	display: block;
+	width: 300px;
+	margin: 0 auto;
+	border: none;
+}
+
+/*================================================
+ *  同意書アイコン
+ ================================================*/
+.pagetop2 {
+	position: fixed;
+	bottom: 50%;
+	right: 0px;
+}
+
+.pagetop2 a {
+	background: no-repeat 55% 8px url("https://yawara.clinic/img/common/pen2.png") #ffb6c1;
+	background-size: 22px;
+	border: solid 2px #f8f8f8;
+	border-right: none;
+	-ms-writing-mode: tb-rl;
+	writing-mode: vertical-rl;
+	padding: 38px 15px 15px;
+	border-radius: 7px 0 0 7px;
+	color: #555;
+	letter-spacing: 2px;
+}
+
+.--fontSize {
+	font-size: 14px;
+}
+
+/*================================================
+ *  SVGアイコン
+ ================================================*/
+.svg{
+	&.--smartphone{
+		width: 30px;
+		aspect-ratio: 1;
+	}
+	&.--reservation{
+		aspect-ratio: 1;
+		fill: transparent;
+    stroke: white;
+		transform: translateY(10px);
+	}
+}
